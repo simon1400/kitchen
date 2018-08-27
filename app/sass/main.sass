@@ -1,0 +1,485 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent
+	color: #fff
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: $default-font
+	overflow-x: hidden
+	color: $text
+	font-family: 'Montserrat'
+	background-image: url('/img/tapetasvetla.png')
+	background-repeat: repeat
+	input, textarea
+		border: #666 1px solid
+		outline: none
+		&:focus:required:invalid
+			border-color: red
+		&:required:valid
+			border-color: green
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+	&.img-width
+		width: 100%
+
+.text-center
+	text-align: center
+
+b, strong
+	font-weight: bold
+
+header
+	background-color: #fff
+	box-shadow: 0px 4px 45px 0px rgba(0, 0, 0, 0.2)
+	position: relative
+	z-index: 1000
+
+.header
+	min-height: 115px
+	display: -webkit-flex
+	display: -ms-flex
+	display: flex
+	justify-content: space-between
+	padding: 15px 0
+
+	.header_but_control
+		float: right
+		display: inline-block
+		text-align: right
+		padding-top: 25px
+		img
+			height: 20px
+		> div
+			display: inline-block
+			margin-left: 15px
+		form
+			display: none
+	nav
+		ul
+			width: 100%
+			padding-left: 0
+			margin-bottom: 0
+			li
+				list-style-type: none
+				display: inline-block
+				a
+					color: inherit
+					display: block
+					font-size: 15px
+					text-transform: uppercase
+					padding: 30px 45px
+					letter-spacing: 1px
+					&:hover
+						text-decoration: none
+
+.banner
+	width: 100%
+	display: block
+	overflow: hidden
+	position: relative
+	background-position: center center
+	background-size: cover
+	background-repeat: no-repeat
+
+.banner_1
+	height: 1050px
+
+.banner_info_top
+	position: absolute
+	z-index: 10
+	top: 253px
+	left: 50%
+	-webkit-transform: translateX(-50%)
+	transform: translateX(-50%)
+	text-align: center
+	line-height: 39px
+	width: 700px
+	background-color: transparent
+	h1
+		display: inline-block
+		font-weight: bold
+		color: white
+		background: rgba(33, 20, 81, 0.8)
+		padding: 20px 35px 10px
+		margin-bottom: 0
+		letter-spacing: 1px
+		font-size: 36px
+	span
+		display: inline-block
+		color: white
+		text-align: center
+		background: rgba(33, 20, 81, 0.8)
+		font-weight: lighter
+		padding: 0 35px 10px
+		font-size: 31px
+
+.content_home
+	margin-top: -415px
+
+.content
+	background-color: #fff
+	z-index: 100
+	position: relative
+	padding-left: 75px
+	padding-right: 75px
+	padding-bottom: 40px
+
+p
+	font-family: 'Merriweather'
+	font-size: 17px
+	letter-spacing: 1px
+
+.top_info
+	transform: translateY(-55px)
+	.thumb
+		border: 10px solid white
+		box-shadow: 0px 4px 45px 0px rgba(0, 0, 0, 0.2)
+		transform: rotate(3deg)
+	h3
+		padding-top: 150px
+		font-size: 37px
+		font-weight: lighter
+		margin-bottom: 20px
+	p
+		margin-bottom: 30px
+
+.top_info_item
+	margin-bottom: 50px
+
+.more
+	color: $accent
+	text-transform: uppercase
+	font-size: 15px
+	font-family: 'Montserrat'
+	letter-spacing: 1px
+	vertical-align: middle
+	img
+		height: 15px
+		vertical-align: middle
+		display: inline-block
+		margin-top: -3px
+		margin-left: 5px
+	&:hover
+		text-decoration: none
+		color: inherit
+
+h2
+	text-align: center
+	font-size: 37px
+	font-family: 'Montserrat'
+	font-weight: lighter
+	letter-spacing: 1px
+	margin-bottom: 70px
+
+.cart-short
+	text-align: center
+	img
+		border: 10px solid white
+		box-shadow: 0px 4px 45px 0px rgba(0, 0, 0, 0.2)
+		width: 100%
+		margin-bottom: 25px
+	h3
+		font-size: 17px
+		font-family: 'Merriweather'
+		font-style: normal
+	.price_short
+		font-size: 15px
+		color: $accent
+
+.new_eshop
+	text-align: center
+
+.banner
+	.button
+		color: white
+		border-color: white
+		width: 230px
+		&:hover
+			color: $accent
+			background-color: #fff
+
+.button
+	margin-left: auto
+	margin-right: auto
+	text-align: center
+	display: inline-block
+	border: 2px solid $accent
+	border-radius: 3px
+	padding: 10px 0
+	width: 230px
+	color: $accent
+	text-transform: uppercase
+	transition: all .5s ease
+	margin-top: 70px
+	margin-bottom: 40px
+	&:hover
+		text-decoration: none
+		color: white
+		background-color: $accent
+
+
+
+.banner_2
+	min-height: 650px
+	display: -webkit-flex
+	display: -ms-flex
+	display: flex
+	width: 100%
+
+.banner_info_bottom
+	color: white
+	text-align: center
+	width: 725px
+	margin: auto
+	background-color: rgba($accent, .8)
+	padding-top: 70px
+	padding-bottom: 75px
+	h2
+		margin-bottom: 20px
+	.button
+		margin-top: 20px
+		margin-bottom: 0
+
+
+.contacts
+	background-color: #fff
+	text-align: center
+	padding-left: 75px
+	padding-right: 75px
+	h2
+		padding-top: 70px
+		margin-bottom: 50px
+	h3
+		font-size: 25px
+		font-family: 'Montserrat'
+		font-weight: lighter
+		letter-spacing: 1px
+		margin-bottom: 20px
+
+
+footer, .footer
+	background-color: $accent
+	color: white
+	letter-spacing: 1px
+	padding-top: 80px
+	padding-bottom: 100px
+	ul
+		padding-left: 0
+		margin-bottom: 0
+		li
+			list-style-type: none
+			font-size: 17px
+			font-family: 'Merriweather'
+			a
+				color: inherit
+	h3
+		font-family: 'Montserrat'
+		font-weight: lighter
+		font-size: 25px
+		margin-bottom: 30px
+
+.soc_icons
+	margin-bottom: 30px
+	ul li
+		display: inline-block
+		margin-left: 20px
+	img
+		height: 35px
+
+.logo_footer
+	margin-top: 70px
+
+
+.breadcrumbs
+	text-align: center
+	padding-top: 30px
+	nav
+		display: inline-block
+		ul
+			padding-left: 0
+			margin-bottom: 0
+			li
+				list-style-type: none
+				display: inline-block
+				position: relative
+				&:not(:last-child)
+					padding-right: 30px
+					&::after
+						content: '>'
+						display: block
+						position: absolute
+						right: -5px
+						top: 2px
+				&:not(:first-child)
+					padding-left: 30px
+				a
+					text-transform: uppercase
+					color: inherit
+					font-size: 11px
+					letter-spacing: 1px
+					text-decoration: none
+			.current
+				a
+					color: rgba($text, .7)
+
+
+.category_top
+	display: -webkit-flex
+	display: -ms-flex
+	display: flex
+	justify-content: space-between
+	vertical-align: middle
+	border-bottom: 1px solid rgba(#4D4D4D, .2)
+	align-items: flex-end
+	padding-bottom: 10px
+	margin-top: 30px
+	> div
+		flex: 1
+	.name_menu
+		vertical-align: bottom
+		span
+			font-size: 25px
+			font-family: 'Montserrat'
+			font-weight: lighter
+	h1
+		font-size: 40px
+		font-weight: lighter
+		margin-bottom: 0
+		line-height: 42px
+		text-align: center
+
+.sort
+	text-align: right
+	text-transform: uppercase
+	letter-spacing: 1px
+	font-weight: lighter
+	label
+		margin-bottom: 0
+		font-size: 15px
+	select
+		background-color: transparent
+		border: none
+
+.category_menu
+	ul
+		padding-left: 0
+		margin-bottom: 0
+		padding-top: 10px
+		li
+			display: block
+			list-style-type: none
+			padding-top: 8px
+			padding-bottom: 8px
+			a
+				text-transform: uppercase
+				color: inherit
+				letter-spacing: 1px
+
+
+.category .cart-short
+	margin-top: 70px
+
+.detail_imgae
+	img
+		width: 100%
+		border: 10px solid white
+		transform: rotate(3deg)
+		box-shadow: 0px 4px 45px 0px rgba(0, 0, 0, 0.2)
+
+.product
+	h1
+		text-align: center
+		font-size: 40px
+		letter-spacing: 1px
+		font-family: 'Montserrat'
+		font-weight: lighter
+		margin-top: 40px
+		margin-bottom: 60px
+
+
+
+.description_product
+	padding-left: 40px
+
+.order_block
+	margin-bottom: 20px
+	.price span
+		font-size: 40px
+		font-family: 'Montserrat'
+		font-weight: lighter
+		letter-spacing: 2px
+		color: $accent
+	input
+		height: 49px
+		width: 69px
+		display: inline-block
+		border: 2px solid rgba($text, .2)
+		padding: 10px
+	.button
+		margin-top: 0
+		margin-bottom: 0
+
+.soc_share
+	margin-top: 40px
+	margin-bottom: 40px
+	ul
+		padding-left: 0
+		margin-bottom: 0
+		li
+			list-style-type: none
+			display: inline-block
+			margin-right: 20px
+			img
+				height: 20px
+
+
+.product_info
+	border-top: 1px solid rgba($text, .2)
+	border-bottom: 1px solid rgba($text, .2)
+	padding-top: 40px
+	padding-bottom: 60px
+	h3
+		font-size: 25px
+		font-family: 'Montserrat'
+		font-weight: lighter
+	ul
+		padding-left: 0
+		margin-bottom: 0
+		margin-top: 15px
+		li
+			list-style-type: none
+			font-family: 'Merriweather'
+
+
+.related
+	h2
+		margin-top: 70px
+		
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width : 1500px)
+  .container
+    max-width: 1440px
+
+@import "media" // Always at the end
