@@ -57,6 +57,9 @@ header
 	padding: 15px 0
 	flex-wrap: wrap
 	position: relative
+	.logo
+		img
+			height: 100%
 	.header_but_control
 		float: right
 		display: inline-block
@@ -68,7 +71,6 @@ header
 			display: inline-block
 			margin-left: 15px
 	nav
-
 		ul
 			width: 100%
 			padding-left: 0
@@ -88,6 +90,8 @@ header
 					text-transform: uppercase
 					padding: 30px 0
 					letter-spacing: 1px
+					&:hover
+						color: $accent
 					img
 						height: 25px
 						margin-top: -3px
@@ -186,7 +190,7 @@ header
 		text-align: center
 		background: rgba(33, 20, 81, 0.8)
 		font-weight: lighter
-		padding: 0 35px 10px
+		padding: 5px 35px
 		font-size: 31px
 
 .content_home
@@ -199,6 +203,7 @@ header
 	padding-left: 75px
 	padding-right: 75px
 	padding-bottom: 40px
+	box-shadow: 0px 4px 45px 0px rgba(0, 0, 0, 0.2)
 
 p
 	font-family: 'Merriweather'
@@ -255,21 +260,33 @@ h2
 	font-weight: lighter
 	letter-spacing: 1px
 	margin-bottom: 70px
+	color: $accent
+
+h3
+	color: $accent
 
 .cart-short
 	text-align: center
+	&:hover
+		img
+			transform: scale(1.05)
 	img
 		border: 10px solid white
 		box-shadow: 0px 4px 45px 0px rgba(0, 0, 0, 0.2)
 		width: 100%
 		margin-bottom: 25px
+		transform: scale(1)
+		transition: all .5s ease
 	h3
 		font-size: 17px
 		font-family: 'Merriweather'
 		font-style: normal
+		color: $text
+		letter-spacing: 1px
 	.price_short
-		font-size: 15px
+		font-size: 17px
 		color: $accent
+		letter-spacing: 1px
 
 .new_eshop
 	text-align: center
@@ -321,6 +338,7 @@ h2
 	padding-bottom: 75px
 	h2
 		margin-bottom: 20px
+		color: white
 	.button
 		margin-top: 20px
 		margin-bottom: 0
@@ -340,6 +358,8 @@ h2
 		font-weight: lighter
 		letter-spacing: 1px
 		margin-bottom: 20px
+	.contacts_item
+		margin-bottom: 50px
 
 
 footer, .footer
@@ -362,6 +382,7 @@ footer, .footer
 		font-weight: lighter
 		font-size: 25px
 		margin-bottom: 30px
+		color: white
 	.last_footer
 		text-align: right
 
@@ -372,6 +393,10 @@ footer, .footer
 		margin-left: 20px
 	img
 		height: 35px
+		transition: all .3s ease
+		transform: scale(1)
+		&:hover
+			transform: scale(1.1)
 
 .logo_footer
 	margin-top: 70px
@@ -418,7 +443,7 @@ footer, .footer
 	vertical-align: middle
 	border-bottom: 1px solid rgba(#4D4D4D, .2)
 	align-items: flex-end
-	padding-bottom: 10px
+	padding-bottom: 25px
 	margin-top: 30px
 	> div
 		flex: 1
@@ -448,6 +473,7 @@ footer, .footer
 		border: none
 
 .category_menu
+	margin-top: 45px
 	ul
 		padding-left: 0
 		margin-bottom: 0
@@ -461,10 +487,28 @@ footer, .footer
 				text-transform: uppercase
 				color: inherit
 				letter-spacing: 1px
+				text-decoration: none
+				position: relative
+				display: inline-block
+				&:after
+					content: ''
+					display: block
+					width: 0
+					position: absolute
+					left: 0
+					bottom: 2px
+					transition: all .3s ease
+					height: 1px
+					background-color: $accent
+				&:hover
+					color: $accent
+					&:after
+						width: 100%
+
 
 
 .category .cart-short
-	margin-top: 70px
+	margin-top: 45px
 
 .detail_imgae
 	img
@@ -489,7 +533,8 @@ footer, .footer
 	padding-left: 40px
 
 .order_block
-	margin-bottom: 20px
+	margin-bottom: 60px
+	margin-top: 40px
 	.price span
 		font-size: 40px
 		font-family: 'Montserrat'
@@ -500,15 +545,14 @@ footer, .footer
 		height: 49px
 		width: 69px
 		display: inline-block
-		border: 2px solid rgba($text, .2)
-		padding: 10px
+		border: 1px solid rgba($text, .2)
+		padding: 15px
 	.button
 		margin-top: 0
 		margin-bottom: 0
 
 .soc_share
-	margin-top: 40px
-	margin-bottom: 40px
+	margin-bottom: 60px
 	ul
 		padding-left: 0
 		margin-bottom: 0
@@ -518,6 +562,10 @@ footer, .footer
 			margin-right: 20px
 			img
 				height: 20px
+				transform: scale(1)
+				transition: all .3s ease
+				&:hover
+					transform: scale(1.1)
 
 
 .product_info
