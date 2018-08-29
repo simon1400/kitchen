@@ -18,7 +18,7 @@ body
 	overflow-x: hidden
 	color: $text
 	font-family: 'Montserrat'
-	background-image: url('/img/tapetasvetla.png')
+	background-image: url('assets/image/tapetasvetla.png')
 	background-repeat: repeat
 	input, textarea
 		border: #666 1px solid
@@ -58,10 +58,8 @@ header
 	flex-wrap: wrap
 	position: relative
 	.logo
-		max-width: 240px
 		img
 			height: 100%
-			width: 100%	
 	.header_but_control
 		float: right
 		display: inline-block
@@ -214,11 +212,6 @@ p
 
 .top_info
 	transform: translateY(-55px)
-	.thumb
-		border: 10px solid white
-		box-shadow: 0px 4px 45px 0px rgba(0, 0, 0, 0.2)
-		transform: rotate(3deg)
-		width: 100%
 	h3
 		padding-top: 150px
 		font-size: 37px
@@ -233,10 +226,19 @@ p
 	margin-bottom: 50px
 	&:nth-child(even)
 		.top_info_descr
-			padding-left: 0
+			padding-left: 15px
 			padding-right: 80px
 		.thumb
-			transform: rotate(-3deg);
+			transform: rotate(-3deg)
+
+.thumb
+	width: 100%
+	border: 10px solid white
+	box-shadow: 0px 4px 45px 0px rgba(0, 0, 0, 0.2)
+	transform: rotate(3deg)
+	height: auto
+
+
 
 .more
 	color: $accent
@@ -404,37 +406,35 @@ footer, .footer
 	margin-top: 70px
 
 
+h1
+	font-family: 'Montserrat'
+	font-weight: lighter
+
+.full_article
+	padding-top: 60px
+	padding-bottom: 60px
+	h1
+		text-align: center
+		margin-bottom: 50px
+
 .breadcrumbs
 	text-align: center
 	padding-top: 30px
 	nav
-		display: inline-block
-		ul
-			padding-left: 0
-			margin-bottom: 0
-			li
-				list-style-type: none
-				display: inline-block
-				position: relative
-				&:not(:last-child)
-					padding-right: 30px
-					&::after
-						content: '>'
-						display: block
-						position: absolute
-						right: -5px
-						top: 2px
-				&:not(:first-child)
-					padding-left: 30px
-				a
-					text-transform: uppercase
-					color: inherit
-					font-size: 11px
-					letter-spacing: 1px
-					text-decoration: none
-			.current
-				a
-					color: rgba($text, .7)
+		a
+			color: inherit
+			display: inline-block
+			margin-right: 10px
+			&:not(:first-child)
+				margin-left: 10px
+			&:last-child
+				margin-right: 20px
+		img
+			height: 20px
+			margin-top: -3px
+			&:last-child
+				margin-right: 10px
+
 
 
 .category_top
@@ -591,6 +591,48 @@ footer, .footer
 .related
 	h2
 		margin-top: 70px
+
+.rubrika
+	h1
+		text-align: center
+		display: block
+		font-family: 'Montserrat'
+		font-weight: lighter
+		font-size: 40px
+		margin-bottom: 50px
+		padding-top: 50px
+	.top_info
+		transform: none
+		.top_info_item
+			margin-bottom: 100px
+		h3
+			padding-top: 50px
+
+.search_item
+	border-bottom: 1px solid rgba(#4D4D4D, .2)
+	border-top: 1px solid rgba(#4D4D4D, .2)
+	padding: 15px 10px
+	display: block
+	color: inherit
+	transition: all .5s ease
+	&:hover
+		text-decoration: none
+		color: inherit
+		background-color: rgba(#4D4D4D, .1)
+	h2
+		margin-bottom: 0
+		text-align: left
+		font-family: 'Montserrat'
+		font-weight: lighter
+		font-size: 30px
+	.thumb
+		border-width: 5px
+		transform: none
+
+.search
+	h1
+		padding-top: 35px
+		padding-bottom: 35px
 
 
 

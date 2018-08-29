@@ -26,6 +26,11 @@
   .name_cat h1
     text-align: left
 
+  .top_info_item
+  	&:nth-child(even)
+  		.top_info_descr
+  			padding-right: 15px
+
 // ≥992px
 +media-breakpoint-down(md)
   .logo
@@ -41,6 +46,13 @@
   .top_info
     h3
       padding-top: 50px
+
+  .full_article .thumb
+    margin-bottom: 50px
+
+  .search_item
+  	.thumb
+  		display: none
 
 // ≥768px
 +media-breakpoint-down(sm)
@@ -189,7 +201,10 @@
 
 // ≤576px
 +media-breakpoint-up(sm)
-
+  .header .logo
+    max-width: 240px
+    img
+      width: 100%
 
 // ≤768px
 +media-breakpoint-up(md)
