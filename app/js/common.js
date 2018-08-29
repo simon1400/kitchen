@@ -1,8 +1,13 @@
 $(function() {
 
-	$('.hamburger').click(function() {
+	$('#hamburger_menu').click(function() {
     $(this).toggleClass('is-active');
-    $(this).next().slideToggle()
+    $(this).next('nav').slideToggle()
+  })
+
+  $('#hamburder_category').click(function() {
+    $(this).toggleClass('is-active');
+    $('.category_menu').slideToggle()
   })
 
   $('.dropdown').click(function() {

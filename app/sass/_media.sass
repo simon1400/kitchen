@@ -21,6 +21,11 @@
     .top_info_descr
       padding-left: 15px
 
+  .name_menu
+    display: none
+  .name_cat h1
+    text-align: left
+
 // ≥992px
 +media-breakpoint-down(md)
   .logo
@@ -100,6 +105,31 @@
         margin-left: 0
         margin-right: 20px
 
+  .category_top
+    margin-top: 0
+    padding-top: 30px
+
+  .category_top
+    flex-wrap: wrap
+    > div
+      flex: auto
+  .name_cat
+    width: 100%
+    h1
+      text-align: center
+
+  .category_menu
+    display: none
+    margin-top: 15px
+
+  #hamburder_category
+    float: left
+    margin-top: 0
+    padding: 0
+
+  .sort
+    margin-top: 30px
+
 
 
 // ≥576px
@@ -149,6 +179,10 @@
 
   .button
     margin-top: 0
+
+  .sort
+    label
+      display: none
 
 
 /*==========  Mobile First  ==========*/

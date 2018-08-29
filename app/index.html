@@ -31,7 +31,7 @@
 <body>
 
 
-	<header >
+	<header>
 		<div class="container">
 			<div class="header">
 				<div class="logo"><img src="/img/logo.svg" alt=""></div>
@@ -51,7 +51,7 @@
 					</div>
 				</div>
 				<div class="nav_top">
-					<button class="hamburger hamburger--spring d-block d-xs-block d-md-none" type="button">
+					<button class="hamburger hamburger--spring d-block d-xs-block d-md-none" id="hamburger_menu" type="button">
 					  <span class="hamburger-box">
 					    <span class="hamburger-inner"></span>
 					  </span>
@@ -98,69 +98,107 @@
 		</div>
 	</header>
 
-	<div class="banner banner_1" style="background-image: url('/img/slide.jpg')">
-		<div class="banner_info_top">
-			<h1>My Kitchen</h1><br>
-			<span>zdrave RAW bistro v Brne</span>
-		</div>
-	</div>
-
 
 	<div class="container cont_resp">
-		<div class="content content_home">
-			<div class="top_info">
-				<div class="top_info_item">
-					<div class="row">
-						<div class="col-lg-6 col-md-12">
-							<img class="thumb" src="/img/news1.jpg" alt="">
-						</div>
-						<div class="top_info_descr col-lg-6 col-md-12">
-							<h3>Lorem ipsum</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio nulla omnis ipsa vero cupiditate consequuntur accusamus aliquid odit aliquam animi dolorem laboriosam excepturi, repudiandae, ab voluptatibus obcaecati dolorum, suscipit! Facilis!</p>
-							<a class="more" href="#">Cely clanek <img src="/img/arrow-right-light.svg" alt=""></a>
-						</div>
-					</div>
+		<div class="content category">
+			<div class="breadcrumbs">
+				<nav>
+					<ul>
+						<li><a href="">Home</a></li>
+						<li class="current"><a href="">Holister easy plaid shirt</a></li>
+					</ul>
+				</nav>
+			</div>
+
+			<div class="category_top">
+				<div class="name_menu">
+					<span>Kategorie</span>
 				</div>
-				<div class="top_info_item">
-					<div class="row">
-						<div class="col-lg-6 col-lg-push-6 col-md-12">
-							<img class="thumb" src="/img/news1.jpg" alt="">
-						</div>
-						<div class="top_info_descr col-lg-pull-6 col-lg-6 col-md-12">
-							<h3>Lorem ipsum</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio nulla omnis ipsa vero cupiditate consequuntur accusamus aliquid odit aliquam animi dolorem laboriosam excepturi, repudiandae, ab voluptatibus obcaecati dolorum, suscipit! Facilis!</p>
-							<a class="more" href="#">Cely clanek <img src="/img/arrow-right-light.svg" alt=""></a>
-						</div>
-					</div>
+				<div class="name_cat">
+					<h1>Produkty</h1>
+				</div>
+				<div class="sort">
+					<button class="hamburger hamburger--spring d-block d-xs-block d-md-none" id="hamburder_category" type="button">
+					  <span class="hamburger-box">
+					    <span class="hamburger-inner"></span>
+					  </span>
+					</button>
+					<form action="">
+						<label for="">Seradit od:</label>
+						<select name="sort" id="">
+							<option value="Nejprodavanejsi">Nejprodavanejsi</option>
+							<option value="Nejprodavanejsi">Nejprodavanejsi</option>
+							<option value="Nejprodavanejsi">Nejprodavanejsi</option>
+						</select>
+					</form>
 				</div>
 			</div>
 
-			<div class="new_eshop">
-				<h2>Novinky v e-shopu</h2>
-				<div class="row">
-					<div class="col-sm-4">
-						<div class="cart-short">
-							<img src="/img/news1.jpg" alt="">
-							<h3>Semínková pomazánka s chilli papričkami</h3>
-							<span class="price_short">185 kc</span>
-						</div>
-					</div>
-					<div class="col-sm-4">
-						<div class="cart-short">
-							<img src="/img/news1.jpg" alt="">
-							<h3>Semínková pomazánka s chilli papričkami</h3>
-							<span class="price_short">185 kc</span>
-						</div>
-					</div>
-					<div class="col-sm-4">
-						<div class="cart-short">
-							<img src="/img/news1.jpg" alt="">
-							<h3>Semínková pomazánka s chilli papričkami</h3>
-							<span class="price_short">185 kc</span>
-						</div>
+			<div class="row">
+				<div class="col-md-3 col-sm-12">
+					<div class="category_menu">
+						<nav>
+							<ul>
+								<li><a href="#">Ovoce z afriky - virunca</a></li>
+								<li><a href="#">Pomazanky a hummusy</a></li>
+								<li><a href="#">Cerstve fresh stavy</a></li>
+								<li><a href="#">Raw rostlinne napoje</a></li>
+								<li><a href="#">Vecepate</a></li>
+								<li><a href="#">Bezlepkove speciality</a></li>
+								<li><a href="#">Pecivo</a></li>
+								<li><a href="#">Specialni nabidka</a></li>
+								<li><a href="#">Sendvice, veggie burgery, tortily</a></li>
+								<li><a href="#">Knihy</a></li>
+							</ul>
+						</nav>
 					</div>
 				</div>
-				<a class="button" href="#">Do e-shopu</a>
+				<div class="col-md-9 col-sm-12">
+					<div class="row">
+					<div class="col-lg-4 col-md-6 col-sm-6 col-xs-6">
+						<div class="cart-short">
+							<img src="/img/news1.jpg" alt="">
+							<h3>Semínková pomazánka s chilli papričkami</h3>
+							<span class="price_short">185 kc</span>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-6 col-xs-6">
+						<div class="cart-short">
+							<img src="/img/news1.jpg" alt="">
+							<h3>Semínková pomazánka s chilli papričkami</h3>
+							<span class="price_short">185 kc</span>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-6 col-xs-6">
+						<div class="cart-short">
+							<img src="/img/news1.jpg" alt="">
+							<h3>Semínková pomazánka s chilli papričkami</h3>
+							<span class="price_short">185 kc</span>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-6 col-xs-6">
+						<div class="cart-short">
+							<img src="/img/news1.jpg" alt="">
+							<h3>Semínková pomazánka s chilli papričkami</h3>
+							<span class="price_short">185 kc</span>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-6 col-xs-6">
+						<div class="cart-short">
+							<img src="/img/news1.jpg" alt="">
+							<h3>Semínková pomazánka s chilli papričkami</h3>
+							<span class="price_short">185 kc</span>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-6 col-xs-6">
+						<div class="cart-short">
+							<img src="/img/news1.jpg" alt="">
+							<h3>Semínková pomazánka s chilli papričkami</h3>
+							<span class="price_short">185 kc</span>
+						</div>
+					</div>
+					</div>
+				</div>
 			</div>
 		</div>
 
