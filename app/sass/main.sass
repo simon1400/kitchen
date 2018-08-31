@@ -271,26 +271,32 @@ h3
 
 .cart-short
 	text-align: center
-	&:hover
+	&:hover, a:hover
+		text-decoration: none
+		h3, h2
+			color: $accent
 		img
 			transform: scale(1.05)
 	img
 		border: 10px solid white
 		box-shadow: 0px 4px 45px 0px rgba(0, 0, 0, 0.2)
 		width: 100%
+		height: auto
 		margin-bottom: 25px
 		transform: scale(1)
 		transition: all .5s ease
-	h3
+	h3, h2
 		font-size: 17px
 		font-family: 'Merriweather'
 		font-style: normal
 		color: $text
+		margin-bottom: inherit
 		letter-spacing: 1px
-	.price_short
+	.price_short, .price
 		font-size: 17px
 		color: $accent
 		letter-spacing: 1px
+		display: block
 
 .new_eshop
 	text-align: center
@@ -507,13 +513,16 @@ h1
 					&:after
 						width: 100%
 
-.category .cart-short
-	margin-top: 45px
+.category
+	margin-top: -200px
+	.cart-short
+		margin-top: 45px
 
 .detail_imgae
 	margin-bottom: 50px
 	.thumb
 		transform: rotate(-3deg)
+		margin-bottom: 0
 
 .product
 	h1
@@ -524,6 +533,8 @@ h1
 		font-weight: lighter
 		padding-top: 40px
 		margin-bottom: 60px
+	.thumb
+		margin-bottom: 20px
 
 
 
@@ -633,6 +644,32 @@ h1
 
 .quantity
 	display: inline-block
+
+
+.category_image
+	min-height: 630px
+	height: 630px
+	width: 100vw
+	position: relative
+	left: 50%
+	transform: translateX(-50%)
+	text-align: center
+	overflow: hidden
+	background-size: cover
+	background-position: center center
+	.category_info
+		position: absolute
+		top: 85px
+		left: 50%
+		transform: translateX(-50%)
+		width: 725px
+		background-color: rgba($accent, .8)
+		color: white
+		padding: 50px 60px
+		h1
+			font-size: 40px
+			font-weight: lighter
+			font-family: 'Montserrat'
 
 
 
