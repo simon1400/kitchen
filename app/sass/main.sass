@@ -217,13 +217,17 @@ p
 		font-size: 37px
 		font-weight: lighter
 		margin-bottom: 20px
+		line-height: 50px
 	p
 		margin-bottom: 30px
 	.top_info_descr
 		padding-left: 80px
 
 .top_info_item
-	margin-bottom: 50px
+	margin-bottom: 70px
+	&:not(:first-child)
+		.top_info_descr h3
+			padding-top: 50px
 	&:nth-child(even)
 		.top_info_descr
 			padding-left: 15px
@@ -237,8 +241,6 @@ p
 	box-shadow: 0px 4px 45px 0px rgba(0, 0, 0, 0.2)
 	transform: rotate(3deg)
 	height: auto
-
-
 
 .more
 	color: $accent
@@ -422,6 +424,11 @@ h1
 	h1
 		text-align: center
 		margin-bottom: 50px
+	.thumb
+		max-width: 320px
+		float: left
+		margin-right: 30px
+		margin-bottom: 20px
 
 .breadcrumbs
 	text-align: center
