@@ -83,7 +83,7 @@ header
 				list-style-type: none
 				display: inline-block
 				position: relative
-				a
+				a, &.dropdown
 					color: inherit
 					display: block
 					font-size: 15px
@@ -679,11 +679,48 @@ h1
 			font-family: 'Montserrat'
 
 
+.daily_menu_item
+	border-bottom: 1px solid rgba($text, .4)
+	padding-bottom: 15px
+	padding-top: 15px
+	letter-spacing: 1px
+	&:first-child
+		margin-top: 40px
+	h3
+		font-size: 25px
+		font-weight: lighter
+		font-family: 'Montserrat'
+		color: inherit
+		letter-spacing: 1px
+		margin-bottom: 0
+	input
+		width: 75px
+		height: 45px
+		border: 2px solid rgba($text, .2)
+		padding: 15px
+		color: $text
+		display: inline
+	.price
+		color: $accent
+		display: inline
+		margin-right: 10px
+		text-transform: none
+	.order_menu
+		text-align: right
+		vertical-align: top
 
+	span
+		display: inline
+		margin-right: 25px
+		text-transform: uppercase
+	p
+		display: inline-block
+		padding-top: 10px
+		letter-spacing: 1px
 
-
-
-
+.button_menu
+	float: right
+	margin-top: 30px
 
 
 
