@@ -9,6 +9,28 @@
 	background-color: $accent
 	color: #fff
 
+
+input[type=number]
+	height: 30px
+	line-height: 30px
+	font-size: 16px
+	padding: 0 0px
+	border-radius: 3px
+
+input[type=number]::-webkit-inner-spin-button
+	-webkit-appearance: none
+	cursor: pointer
+	display: block
+	width: 17px
+	height: 30px
+	padding: 0px
+	color: #333
+	right: -10px
+	text-align: center
+	position: relative
+	background: #fff url('/img/arrows.png') no-repeat 50% 50%
+
+
 body
 	-webkit-font-smoothing: antialiased
 	font-size: 16px
@@ -66,8 +88,13 @@ header
 		display: inline-block
 		text-align: right
 		padding-top: 25px
-		img
+		img, svg
 			height: 20px
+			vertical-align: middle
+			cursor: pointer
+			&:hover
+				path
+					fill: $accent
 		> div
 			display: inline-block
 			margin-left: 15px
@@ -144,7 +171,7 @@ header
 		right: 0
 		top: 0
 		background-color: #fff
-		transition: all .5s ease
+		transition: all .3s ease
 		overflow: hidden
 		input
 			width: 100%
@@ -153,7 +180,7 @@ header
 			padding: 15px
 			border: none
 			padding-right: 145px
-		img
+		span
 			position: absolute
 			top: 50%
 			transform: translateY(-50%)
@@ -170,8 +197,6 @@ header
 			cursor: pointer
 			&:hover
 				color: $accent
-
-
 
 .banner
 	width: 100%
@@ -254,13 +279,15 @@ p
 			padding-left: 15px
 			padding-right: 80px
 		.thumb
-			transform: rotate(-3deg)
+			animation-name: min-spin
+			transform: rotate(3deg)
 
 .thumb
 	width: 100%
 	border: 10px solid white
 	box-shadow: 0px 4px 45px 0px rgba(0, 0, 0, 0.2)
-	transform: rotate(3deg)
+	transition: all 1s ease
+	transform: rotate(-3deg)
 	height: auto
 
 .more
@@ -577,7 +604,7 @@ h1
 		letter-spacing: 1px
 		font-family: 'Montserrat'
 		font-weight: lighter
-		padding-top: 40px
+		padding-top: 0
 		margin-bottom: 60px
 	.thumb
 		margin-bottom: 20px

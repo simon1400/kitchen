@@ -20,6 +20,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Merriweather:300i" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,500,600&amp;subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
 	<link href="libs/hamburger.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 	<!-- Custom Browsers Color Start -->
 	<meta name="theme-color" content="#000">
 	<!-- Custom Browsers Color End -->
@@ -37,16 +38,17 @@
 				<div class="header_but_control d-lg-none">
 					<div class="search">
 						<form action="">
-							<input type="text" placeholder="Hledat...">
-							<img src="/img/times-light.svg" alt="">
+							<input type="text" id="input_search" placeholder="Hledat...">
+							<button type="submit">Hledat</button>
+							<span><img class="svg" src="/img/times-light.svg" alt=""></span>
 						</form>
-						<img src="/img/search-light.svg" alt="">
+						<span><img class="svg" src="/img/search-light.svg" alt=""></span>
 					</div>
 					<div class="user">
-						<img src="/img/user-light.svg" alt="">
+						<img class="svg" src="/img/user-light.svg" alt="">
 					</div>
 					<div class="basket">
-						<img src="/img/shopping-basket-light.svg" alt="">
+						<img class="svg" src="/img/shopping-basket-light.svg" alt="">
 					</div>
 				</div>
 				<div class="nav_top">
@@ -58,7 +60,7 @@
 					<nav>
 						<ul>
 							<li class="dropdown">
-								<a href="#">Nase nabidka <img src="/img/angle-down-light.svg" alt=""></a>
+								<span>Nase nabidka <img src="/img/angle-down-light.svg" alt=""></span>
 								<ul>
 									<li><a href="#">Co delame</a></li>
 									<li><a href="#">Aktuality</a></li>
@@ -67,7 +69,7 @@
 							</li>
 							<li><a href="#">co delame</a></li>
 							<li class="dropdown">
-								<a href="#">Aktuality <img src="/img/angle-down-light.svg" alt=""></a>
+								<span>Aktuality <img src="/img/angle-down-light.svg" alt=""></span>
 								<ul>
 									<li><a href="#">Co delame</a></li>
 									<li><a href="#">Aktuality</a></li>
@@ -81,132 +83,90 @@
 				<div class="header_but_control d-none d-lg-block d-xl-block">
 					<div class="search">
 						<form action="">
-							<input type="text" placeholder="Hledat...">
-							<img src="/img/times-light.svg" alt="">
+							<input type="text" id="input_search" placeholder="Hledat...">
+							<button type="submit">Hledat</button>
+							<span><img class="svg" src="/img/times-light.svg" alt=""></span>
 						</form>
-						<img src="/img/search-light.svg" alt="">
+						<span><img class="svg" src="/img/search-light.svg" alt=""></span>
 					</div>
 					<div class="user">
-						<img src="/img/user-light.svg" alt="">
+						<img class="svg" src="/img/user-light.svg" alt="">
 					</div>
 					<div class="basket">
-						<img src="/img/shopping-basket-light.svg" alt="">
+						<img class="svg" src="/img/shopping-basket-light.svg" alt="">
 					</div>
 				</div>
 			</div>
 		</div>
 	</header>
 
-
+	<div class="banner banner_1" style="background-image: url('/img/slide.jpg')">
+		<div class="animated fadeInUp">
+			<div class="banner_info_top">
+				<h1>My Kitchen</h1><br>
+				<span>zdrave RAW bistro v Brne</span>
+			</div>
+		</div>
+	</div>
 
 
 	<div class="container cont_resp">
-
-		<div class="category_image" style="background-image: url('/img/slide.jpg')">
-			<div class="category_info">
-				<h1>Denni menu</h1>
-				<p> Dolore numquam animi, pariatur ad dolor repudiandae ipsum maiores neque sint, necessitatibus quae voluptas debitis enim ab perferendis molestiae vero culpa. Omnis!</p>
-			</div>
-		</div>
-
-		<div class="content category">
-			<div class="breadcrumbs">
-				<nav>
-					<a href="#">Home</a><img src="/img/angle-right-light.svg" alt="">
-					<a href="#">Decor</a><img src="/img/angle-right-light.svg" alt="">
-					Holister easy plaid shirt
-				</nav>
-			</div>
-
-			<div class="category_top">
-				<div class="name_menu">
-					<span>Kategorie</span>
-				</div>
-				<div class="name_cat">
-					<h1>Produkty</h1>
-				</div>
-				<div class="sort">
-					<button class="hamburger hamburger--spring d-block d-xs-block d-md-none" id="hamburder_category" type="button">
-					  <span class="hamburger-box">
-					    <span class="hamburger-inner"></span>
-					  </span>
-					</button>
-					<form action="">
-						<label for="">Seradit od:</label>
-						<select name="sort" id="">
-							<option value="Nejprodavanejsi">Nejprodavanejsi</option>
-							<option value="Nejprodavanejsi">Nejprodavanejsi</option>
-							<option value="Nejprodavanejsi">Nejprodavanejsi</option>
-						</select>
-					</form>
-				</div>
-			</div>
-
-			<div class="row">
-				<div class="col-md-3 col-sm-12">
-					<div class="category_menu">
-						<nav>
-							<ul>
-								<li><a href="#">Ovoce z afriky - virunca</a></li>
-								<li><a href="#">Pomazanky a hummusy</a></li>
-								<li><a href="#">Cerstve fresh stavy</a></li>
-								<li><a href="#">Raw rostlinne napoje</a></li>
-								<li><a href="#">Vecepate</a></li>
-								<li><a href="#">Bezlepkove speciality</a></li>
-								<li><a href="#">Pecivo</a></li>
-								<li><a href="#">Specialni nabidka</a></li>
-								<li><a href="#">Sendvice, veggie burgery, tortily</a></li>
-								<li><a href="#">Knihy</a></li>
-							</ul>
-						</nav>
-					</div>
-				</div>
-				<div class="col-md-9 col-sm-12">
+		<div class="content content_home">
+			<div class="top_info">
+				<div class="top_info_item">
 					<div class="row">
-					<div class="col-lg-4 col-md-6 col-sm-6 col-xs-6">
-						<div class="cart-short">
-							<img src="/img/news1.jpg" alt="">
-							<h3>Semínková pomazánka s chilli papričkami</h3>
-							<span class="price_short">185 kc</span>
+						<div class="col-lg-6 col-md-12">
+							<div class"anim">
+								<img class="thumb" src="/img/news1.jpg" alt="">
+							</div>
 						</div>
-					</div>
-					<div class="col-lg-4 col-md-6 col-sm-6 col-xs-6">
-						<div class="cart-short">
-							<img src="/img/news1.jpg" alt="">
-							<h3>Semínková pomazánka s chilli papričkami</h3>
-							<span class="price_short">185 kc</span>
+						<div class="top_info_descr col-lg-6 col-md-12">
+							<h3>Lorem ipsum</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio nulla omnis ipsa vero cupiditate consequuntur accusamus aliquid odit aliquam animi dolorem laboriosam excepturi, repudiandae, ab voluptatibus obcaecati dolorum, suscipit! Facilis!</p>
+							<a class="more" href="#">Cely clanek <img src="/img/arrow-right-light.svg" alt=""></a>
 						</div>
-					</div>
-					<div class="col-lg-4 col-md-6 col-sm-6 col-xs-6">
-						<div class="cart-short">
-							<img src="/img/news1.jpg" alt="">
-							<h3>Semínková pomazánka s chilli papričkami</h3>
-							<span class="price_short">185 kc</span>
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-6 col-sm-6 col-xs-6">
-						<div class="cart-short">
-							<img src="/img/news1.jpg" alt="">
-							<h3>Semínková pomazánka s chilli papričkami</h3>
-							<span class="price_short">185 kc</span>
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-6 col-sm-6 col-xs-6">
-						<div class="cart-short">
-							<img src="/img/news1.jpg" alt="">
-							<h3>Semínková pomazánka s chilli papričkami</h3>
-							<span class="price_short">185 kc</span>
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-6 col-sm-6 col-xs-6">
-						<div class="cart-short">
-							<img src="/img/news1.jpg" alt="">
-							<h3>Semínková pomazánka s chilli papričkami</h3>
-							<span class="price_short">185 kc</span>
-						</div>
-					</div>
 					</div>
 				</div>
+				<div class="top_info_item">
+					<div class="row">
+						<div class="col-lg-6 col-lg-push-6 col-md-12">
+							<img class="thumb" src="/img/news1.jpg" alt="">
+						</div>
+						<div class="top_info_descr col-lg-pull-6 col-lg-6 col-md-12">
+							<h3>Lorem ipsum</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio nulla omnis ipsa vero cupiditate consequuntur accusamus aliquid odit aliquam animi dolorem laboriosam excepturi, repudiandae, ab voluptatibus obcaecati dolorum, suscipit! Facilis!</p>
+							<a class="more" href="#">Cely clanek <img src="/img/arrow-right-light.svg" alt=""></a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="new_eshop">
+				<h2>Novinky v e-shopu</h2>
+				<div class="row">
+					<div class="col-sm-4">
+						<div class="cart-short">
+							<img src="/img/news1.jpg" alt="">
+							<h3>Semínková pomazánka s chilli papričkami</h3>
+							<span class="price_short">185 kc</span>
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<div class="cart-short">
+							<img src="/img/news1.jpg" alt="">
+							<h3>Semínková pomazánka s chilli papričkami</h3>
+							<span class="price_short">185 kc</span>
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<div class="cart-short">
+							<img src="/img/news1.jpg" alt="">
+							<h3>Semínková pomazánka s chilli papričkami</h3>
+							<span class="price_short">185 kc</span>
+						</div>
+					</div>
+				</div>
+				<a class="button" href="#">Do e-shopu</a>
 			</div>
 		</div>
 
