@@ -28,7 +28,7 @@ input[type=number]::-webkit-inner-spin-button
 	right: -10px
 	text-align: center
 	position: relative
-	background: #fff url('/img/arrows.png') no-repeat 50% 50%
+	background: #fff url('assets/image/arrows.png') no-repeat 50% 50%
 
 
 body
@@ -66,7 +66,7 @@ b, strong
 
 header
 	background-color: #fff
-	box-shadow: 0px 4px 45px 0px rgba(0, 0, 0, 0)
+	box-shadow: 0px 4px 45px 0px rgba(0, 0, 0, .2)
 	position: relative
 	z-index: 1000
 	transition: all .5s ease
@@ -160,6 +160,16 @@ header
 	margin-top: 12px
 	&:focus, &:active
 		outline: none
+
+.basket a
+	color: inherit
+	span
+		vertical-align: middle
+		margin-left: 3px
+	&:hover
+		text-decoration: none
+		span
+			color: $accent
 
 .search
 	form
@@ -279,8 +289,21 @@ p
 			padding-left: 15px
 			padding-right: 80px
 		.thumb
-			animation-name: min-spin
 			transform: rotate(3deg)
+			animation-name: rotating-plus
+
+@keyframes rotating
+	from
+		transform: rotate(0deg)
+	to
+		transform: rotate(-3deg)
+
+@keyframes rotating-plus
+	from
+		transform: rotate(0deg)
+	to
+		transform: rotate(3deg)
+
 
 .thumb
 	width: 100%
@@ -289,6 +312,7 @@ p
 	transition: all 1s ease
 	transform: rotate(-3deg)
 	height: auto
+	animation-name: rotating
 
 .more
 	color: $accent
@@ -586,7 +610,7 @@ h1
 					&:after
 						width: 100%
 
-.category
+div.category
 	margin-top: -200px
 	.cart-short
 		margin-top: 30px
@@ -680,7 +704,7 @@ h1
 		font-weight: lighter
 		font-size: 40px
 		margin-bottom: 50px
-		padding-top: 50px
+		padding-top: 0
 	.top_info
 		transform: none
 		.top_info_item
