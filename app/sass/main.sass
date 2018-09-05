@@ -28,7 +28,7 @@ input[type=number]::-webkit-inner-spin-button
 	right: -10px
 	text-align: center
 	position: relative
-	background: #fff url('/img/arrows.png') no-repeat 50% 50%
+	background: #fff url('assets/image/arrows.png') no-repeat 50% 50%
 
 
 body
@@ -66,7 +66,7 @@ b, strong
 
 header
 	background-color: #fff
-	box-shadow: 0px 4px 45px 0px rgba(0, 0, 0, 0)
+	box-shadow: 0px 4px 45px 0px rgba(0, 0, 0, .2)
 	position: relative
 	z-index: 1000
 	transition: all .5s ease
@@ -160,6 +160,16 @@ header
 	margin-top: 12px
 	&:focus, &:active
 		outline: none
+
+.basket a
+	color: inherit
+	span
+		vertical-align: middle
+		margin-left: 3px
+	&:hover
+		text-decoration: none
+		span
+			color: $accent
 
 .search
 	form
@@ -279,7 +289,21 @@ p
 			padding-left: 15px
 			padding-right: 80px
 		.thumb
-			transform: rotate(-3deg)
+			transform: rotate(3deg)
+			animation-name: rotating-plus
+
+@keyframes rotating
+	from
+		transform: rotate(0deg)
+	to
+		transform: rotate(-3deg)
+
+@keyframes rotating-plus
+	from
+		transform: rotate(0deg)
+	to
+		transform: rotate(3deg)
+
 
 .thumb
 	width: 100%
@@ -288,6 +312,7 @@ p
 	transition: all 1s ease
 	transform: rotate(3deg)
 	height: auto
+	animation-name: rotating
 
 .more
 	color: $accent
@@ -496,6 +521,7 @@ h1
 	padding-top: 30px
 	text-transform: uppercase
 	letter-spacing: 1px
+	font-size: 12px
 	margin-bottom: 50px
 	nav
 		a
@@ -570,6 +596,7 @@ h1
 				text-decoration: none
 				position: relative
 				display: inline-block
+				font-size: 12px
 				&:after
 					content: ''
 					display: block
@@ -585,7 +612,7 @@ h1
 					&:after
 						width: 100%
 
-.category
+div.category
 	margin-top: -200px
 	.cart-short
 		margin-top: 30px
@@ -608,7 +635,12 @@ h1
 	.thumb
 		margin-bottom: 20px
 
-
+input[type="number"]
+	height: 49px
+	width: 69px
+	display: inline-block
+	border: 1px solid rgba($text, .2)
+	padding: 15px
 
 .description_product
 	padding-left: 40px
@@ -622,12 +654,7 @@ h1
 		font-weight: lighter
 		letter-spacing: 2px
 		color: $accent
-	input
-		height: 49px
-		width: 69px
-		display: inline-block
-		border: 1px solid rgba($text, .2)
-		padding: 15px
+
 	.button
 		margin-top: 0
 		margin-bottom: 0
@@ -679,7 +706,7 @@ h1
 		font-weight: lighter
 		font-size: 40px
 		margin-bottom: 50px
-		padding-top: 50px
+		padding-top: 0
 	.top_info
 		transform: none
 		.top_info_item
@@ -786,6 +813,97 @@ h1
 .button_menu
 	float: right
 	margin-top: 30px
+
+.basket_head
+	display: block
+	border-bottom: 1px solid rgba($text, .2)
+	text-align: center
+	font-size: 20px
+	margin-bottom: 40px
+
+.table
+	display: table
+	width: 100%
+	border-bottom: 1px solid rgba($text, .2)
+
+.table_row
+	display: table-row
+	p
+		margin-bottom: 0
+	> div
+		display: table-cell
+		vertical-align: middle
+		padding: 20px 10px
+		text-align: center
+	.svg
+		height: 20px
+		cursor: pointer
+		&:hover
+			path
+				fill: red
+
+.basket
+	h2
+		margin-bottom: 0
+		font-size: 30px
+		text-align: left
+		display: block
+		height: 100%
+
+	.table_row
+		.delete_item
+			text-align: center
+		> div:first-child
+			width: 12%
+			padding-left: 0
+		> div:nth-child(2)
+			width: 56%
+			text-align: left
+		> div:nth-child(3)
+			width: 15%
+			text-align: right
+		> div:nth-child(4)
+			width: 8%
+		> div:nth-child(5)
+			width: 7%
+		> div:last-child
+			width: 2%
+			text-align: right
+			padding-right: 0
+	.item_deily_menu
+		> div:nth-child(2)
+			width: 71%
+		> div:nth-child(3)
+			width: 8%
+		> div:nth-child(4)
+			width: 7%
+	.price_basket
+		color: $accent
+		text-transform: uppercase
+	span
+		text-transform: uppercase
+		letter-spacing: 1px
+		font-weight: bold
+
+.basket_change_select
+	select
+		color: $success
+		font-weight: bold
+		text-transform: uppercase
+		letter-spacing: 1px
+		background-color: transparent
+		border: none
+		-webkit-appearance: none
+		&:focus, &:active
+			outline: none
+
+.basket_product_item
+	.thumb
+		transform: rotate(0deg)
+		border-width: 5px
+
+
+
 
 
 

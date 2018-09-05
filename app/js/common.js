@@ -1,6 +1,13 @@
+new WOW().init();
+
 $(function() {
 
-	new WOW().init();
+	// $('.basket_change_select label').click(function() {
+	// 	$('.basket_change_select select').click();
+	// 	console.log($('.basket_change_select select'));
+	// })
+
+
 
 	$('#hamburger_menu').click(function() {
     $(this).toggleClass('is-active');

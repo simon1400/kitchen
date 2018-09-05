@@ -20,6 +20,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Merriweather:300i" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,500,600&amp;subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
 	<link href="libs/hamburger.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 	<!-- Custom Browsers Color Start -->
 	<meta name="theme-color" content="#000">
 	<!-- Custom Browsers Color End -->
@@ -39,9 +40,9 @@
 						<form action="">
 							<input type="text" id="input_search" placeholder="Hledat...">
 							<button type="submit">Hledat</button>
-							<img class="svg" src="/img/times-light.svg" alt="">
+							<span><img class="svg" src="/img/times-light.svg" alt=""></span>
 						</form>
-						<img class="svg" src="/img/search-light.svg" alt="">
+						<span><img class="svg" src="/img/search-light.svg" alt=""></span>
 					</div>
 					<div class="user">
 						<img class="svg" src="/img/user-light.svg" alt="">
@@ -84,15 +85,18 @@
 						<form action="">
 							<input type="text" id="input_search" placeholder="Hledat...">
 							<button type="submit">Hledat</button>
-							<img class="svg" src="/img/times-light.svg" alt="">
+							<span><img class="svg" src="/img/times-light.svg" alt=""></span>
 						</form>
-						<img class="svg" src="/img/search-light.svg" alt="">
+						<span><img class="svg" src="/img/search-light.svg" alt=""></span>
 					</div>
 					<div class="user">
 						<img class="svg" src="/img/user-light.svg" alt="">
 					</div>
 					<div class="basket">
-						<img class="svg" src="/img/shopping-basket-light.svg" alt="">
+						<a href="">
+							<img class="svg" src="/img/shopping-basket-light.svg" alt="">
+							<span>6</span>
+						</a>
 					</div>
 				</div>
 			</div>
@@ -100,9 +104,11 @@
 	</header>
 
 	<div class="banner banner_1" style="background-image: url('/img/slide.jpg')">
-		<div class="banner_info_top">
-			<h1>My Kitchen</h1><br>
-			<span>zdrave RAW bistro v Brne</span>
+		<div class="animated fadeInUp">
+			<div class="banner_info_top">
+				<h1>My Kitchen</h1><br>
+				<span>zdrave RAW bistro v Brne</span>
+			</div>
 		</div>
 	</div>
 
@@ -113,7 +119,9 @@
 				<div class="top_info_item">
 					<div class="row">
 						<div class="col-lg-6 col-md-12">
-							<img class="thumb" src="/img/news1.jpg" alt="">
+							<div class"anim">
+								<img class="thumb wow" src="/img/news1.jpg" alt="">
+							</div>
 						</div>
 						<div class="top_info_descr col-lg-6 col-md-12">
 							<h3>Lorem ipsum</h3>
@@ -125,7 +133,7 @@
 				<div class="top_info_item">
 					<div class="row">
 						<div class="col-lg-6 col-lg-push-6 col-md-12">
-							<img class="thumb" src="/img/news1.jpg" alt="">
+							<img class="thumb wow" src="/img/news1.jpg" alt="">
 						</div>
 						<div class="top_info_descr col-lg-pull-6 col-lg-6 col-md-12">
 							<h3>Lorem ipsum</h3>
