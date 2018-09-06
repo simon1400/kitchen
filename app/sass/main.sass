@@ -161,15 +161,7 @@ header
 	&:focus, &:active
 		outline: none
 
-.basket a
-	color: inherit
-	span
-		vertical-align: middle
-		margin-left: 3px
-	&:hover
-		text-decoration: none
-		span
-			color: $accent
+
 
 .search
 	form
@@ -821,26 +813,37 @@ input[type="number"]
 	font-size: 20px
 	margin-bottom: 40px
 
-.table
-	display: table
+table
 	width: 100%
 	border-bottom: 1px solid rgba($text, .2)
 
-.table_row
-	display: table-row
+tr
 	p
 		margin-bottom: 0
-	> div
+	> td
 		display: table-cell
 		vertical-align: middle
-		padding: 20px 10px
+		padding: 20px 15px
 		text-align: center
 	.svg
 		height: 20px
 		cursor: pointer
+		margin-top: 8px
 		&:hover
 			path
 				fill: red
+
+
+.basket_icon a
+	color: inherit
+	span
+		vertical-align: middle
+		margin-left: 3px
+	&:hover
+		text-decoration: none
+		span
+			color: $accent
+
 
 .basket
 	h2
@@ -849,34 +852,33 @@ input[type="number"]
 		text-align: left
 		display: block
 		height: 100%
-
-	.table_row
+	tr
 		.delete_item
 			text-align: center
-		> div:first-child
+		> td:first-child
 			width: 12%
 			padding-left: 0
-		> div:nth-child(2)
-			width: 56%
+		> td:nth-child(2)
+			width: 53%
 			text-align: left
-		> div:nth-child(3)
+		> td:nth-child(3)
 			width: 15%
 			text-align: right
-		> div:nth-child(4)
+		> td:nth-child(4)
 			width: 8%
-		> div:nth-child(5)
-			width: 7%
-		> div:last-child
+		> td:nth-child(5)
+			width: 10%
+		> td:last-child
 			width: 2%
 			text-align: right
 			padding-right: 0
 	.item_deily_menu
-		> div:nth-child(2)
-			width: 71%
-		> div:nth-child(3)
+		> td:nth-child(2)
+			width: 68%
+		> td:nth-child(3)
 			width: 8%
-		> div:nth-child(4)
-			width: 7%
+		> td:nth-child(4)
+			width: 10%
 	.price_basket
 		color: $accent
 		text-transform: uppercase
@@ -897,10 +899,67 @@ input[type="number"]
 		&:focus, &:active
 			outline: none
 
+
+
 .basket_product_item
 	.thumb
 		transform: rotate(0deg)
 		border-width: 5px
+	&:not(:last-child)
+		.basket_deily_head_top
+			padding-bottom: 0
+
+.item_deily_menu .basket_deily_head_top
+	border-right: 1px solid rgba($text, .2)
+
+.button.bare
+	border: 0
+	width: auto
+	position: relative
+	margin-top: 0
+	margin-bottom: 0
+	&:after
+		content: ''
+		width: 0
+		position: absolute
+		height: 2px
+		bottom: 10px
+		left: 0
+		display: block
+		background-color: $accent
+		transition: all .5s ease
+	&:hover
+		background-color: transparent
+		color: $accent
+		&:after
+			width: 100%
+
+.success
+	color: $success
+	text-transform: uppercase
+	font-weight: bold
+	letter-spacing: 1px
+
+.basket_footer
+	padding-top: 45px
+	vertical-align: middle
+	.button
+		margin-top: 0
+		margin-bottom: 0
+	.price_all
+		text-align: right
+		margin-top: -2px
+		span:first-child
+			margin-right: 10px
+		span:last-child
+			color: $accent
+			font-size: 25px
+	.basket_delivery_info
+		margin-top: 9px
+	.next_step
+		margin-top: -3px
+		float: right
+
 
 
 
