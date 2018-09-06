@@ -20,6 +20,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Merriweather:300i" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,500,600&amp;subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
 	<link href="libs/hamburger.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 	<!-- Custom Browsers Color Start -->
 	<meta name="theme-color" content="#000">
 	<!-- Custom Browsers Color End -->
@@ -39,9 +40,9 @@
 						<form action="">
 							<input type="text" id="input_search" placeholder="Hledat...">
 							<button type="submit">Hledat</button>
-							<img class="svg" src="/img/times-light.svg" alt="">
+							<span><img class="svg" src="/img/times-light.svg" alt=""></span>
 						</form>
-						<img class="svg" src="/img/search-light.svg" alt="">
+						<span><img class="svg" src="/img/search-light.svg" alt=""></span>
 					</div>
 					<div class="user">
 						<img class="svg" src="/img/user-light.svg" alt="">
@@ -84,151 +85,146 @@
 						<form action="">
 							<input type="text" id="input_search" placeholder="Hledat...">
 							<button type="submit">Hledat</button>
-							<img class="svg" src="/img/times-light.svg" alt="">
+							<span><img class="svg" src="/img/times-light.svg" alt=""></span>
 						</form>
-						<img class="svg" src="/img/search-light.svg" alt="">
+						<span><img class="svg" src="/img/search-light.svg" alt=""></span>
 					</div>
 					<div class="user">
 						<img class="svg" src="/img/user-light.svg" alt="">
 					</div>
 					<div class="basket">
-						<img class="svg" src="/img/shopping-basket-light.svg" alt="">
+						<a href="">
+							<img class="svg" src="/img/shopping-basket-light.svg" alt="">
+							<span>6</span>
+						</a>
 					</div>
 				</div>
 			</div>
 		</div>
 	</header>
 
+	<div class="banner banner_1" style="background-image: url('/img/slide.jpg')">
+		<div class="animated fadeInUp">
+			<div class="banner_info_top">
+				<h1>My Kitchen</h1><br>
+				<span>zdrave RAW bistro v Brne</span>
+			</div>
+		</div>
+	</div>
+
 
 	<div class="container cont_resp">
-		<div class="content basket">
-			<div class="breadcrumbs">
-				<nav>
-					<a href="#">Home</a><img src="/img/angle-right-light.svg" alt="">
-					<a href="#">Decor</a><img src="/img/angle-right-light.svg" alt="">
-					Holister easy plaid shirt
-				</nav>
-			</div>
-
-			<div class="basket_head">
-				<h1>Obsah kosiku</h1>
-			</div>
-			<div class="basket_content">
-				<table>
-					<tr class="item_deily_menu">
-						<td class="basket_deily_head_top">
-							<h2>Ctvrtek</h2>
-						</td>
-						<td class="basket_deily_content" colspan="2">
-							<span>Menu + Polevka</span>
-							<p>Kremove rizoto se zampiony, susenymi rajcaty a vegeparmezanem, A: 8</p>
-							<p>Hraskovy krem s tyminem</p>
-						</td>
-						<td class="order_input_basket">
-							<input type="number" value="1">
-						</td>
-						<td class="price_basket">
-							<span>199 kc</span>
-						</td>
-						<td class="delete_item">
-							<img class="svg" src="/img/times-light.svg" alt="">
-						</td>
-					</tr>
-					<tr class="basket_product_item">
-						<td class="basket_deily_head_top">
-							<img class="thumb" src="/img/news1.jpg" alt="">
-						</td>
-						<td class="basket_deily_content">
-							<p>Kremove rizoto se zampiony, susenymi</p>
-						</td>
-						<td class="basket_change_select">
-								<select>
-									<option value="">Zmenit den</option>
-									<option value="">Utery</option>
-									<option value="">Patek</option>
-								</select>
-						</td>
-						<td class="order_input_basket">
-							<input type="number" value="1">
-						</td>
-						<td class="price_basket">
-							<span>199 kc</span>
-						</td>
-						<td class="delete_item">
-							<img class="svg" src="/img/times-light.svg" alt="">
-						</td>
-					</tr>
-					<tr class="basket_product_item">
-						<td class="basket_deily_head_top">
-							<img class="thumb" src="/img/news1.jpg" alt="">
-						</td>
-						<td class="basket_deily_content">
-							<p>Kremove rizoto se zampiony, susenymi</p>
-						</td>
-						<td class="basket_change_select">
-								<select>
-									<option value="">Zmenit den</option>
-									<option value="">Utery</option>
-									<option value="">Patek</option>
-								</select>
-						</td>
-						<td class="order_input_basket">
-							<input type="number" value="1">
-						</td>
-						<td class="price_basket">
-							<span>199 kc</span>
-						</td>
-						<td class="delete_item">
-							<img class="svg" src="/img/times-light.svg" alt="">
-						</td>
-					</tr>
-				</table>
-
-				<table class="table">
-					<tr class="basket_product_item table_row">
-						<td class="basket_deily_head_top">
-							<img class="thumb" src="/img/news1.jpg" alt="">
-						</td>
-						<td class="basket_deily_content">
-							<p>Kremove rizoto se zampiony, susenymi</p>
-						</td>
-						<td class="basket_change_select">
-								<select>
-									<option value="">+ Pridat k menu</option>
-									<option value="">Utery</option>
-									<option value="">Patek</option>
-								</select>
-						</td>
-						<td class="order_input_basket">
-							<input type="number" value="1">
-						</td>
-						<td class="price_basket">
-							<span>199 kc</span>
-						</td>
-						<td class="delete_item">
-							<img class="svg" src="/img/times-light.svg" alt="">
-						</td>
-					</tr>
-				</table>
-			</div>
-			<div class="basket_footer row">
-				<div class="col-3">
-					<a href="#" class="button bare">Zpet k nakupu</a>
-				</div>
-				<div class="col-3">
-					<div class="success basket_delivery_info">Doprava po brne zdarma</div>
-				</div>
-				<div class="col-3">
-					<div class="price_all">
-						<span>Celkova cena</span>
-						<span class="price">99 kc</span>
+		<div class="content content_home">
+			<div class="top_info">
+				<div class="top_info_item">
+					<div class="row">
+						<div class="col-lg-6 col-md-12">
+							<div class"anim">
+								<img class="thumb wow" src="/img/news1.jpg" alt="">
+							</div>
+						</div>
+						<div class="top_info_descr col-lg-6 col-md-12">
+							<h3>Lorem ipsum</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio nulla omnis ipsa vero cupiditate consequuntur accusamus aliquid odit aliquam animi dolorem laboriosam excepturi, repudiandae, ab voluptatibus obcaecati dolorum, suscipit! Facilis!</p>
+							<a class="more" href="#">Cely clanek <img src="/img/arrow-right-light.svg" alt=""></a>
+						</div>
 					</div>
 				</div>
-				<div class="col-3">
-					<a href="#" class="button next_step">Pokracovat</a>
+				<div class="top_info_item">
+					<div class="row">
+						<div class="col-lg-6 col-lg-push-6 col-md-12">
+							<img class="thumb wow" src="/img/news1.jpg" alt="">
+						</div>
+						<div class="top_info_descr col-lg-pull-6 col-lg-6 col-md-12">
+							<h3>Lorem ipsum</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio nulla omnis ipsa vero cupiditate consequuntur accusamus aliquid odit aliquam animi dolorem laboriosam excepturi, repudiandae, ab voluptatibus obcaecati dolorum, suscipit! Facilis!</p>
+							<a class="more" href="#">Cely clanek <img src="/img/arrow-right-light.svg" alt=""></a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="new_eshop">
+				<h2>Novinky v e-shopu</h2>
+				<div class="row">
+					<div class="col-md-4 col-6">
+						<div class="cart-short">
+							<img src="/img/news1.jpg" alt="">
+							<h3>Semínková pomazánka s chilli papričkami</h3>
+							<span class="price_short">185 kc</span>
+						</div>
+					</div>
+					<div class="col-md-4 col-6">
+						<div class="cart-short">
+							<img src="/img/news1.jpg" alt="">
+							<h3>Semínková pomazánka s chilli papričkami</h3>
+							<span class="price_short">185 kc</span>
+						</div>
+					</div>
+					<div class="col-md-4 col-6">
+						<div class="cart-short">
+							<img src="/img/news1.jpg" alt="">
+							<h3>Semínková pomazánka s chilli papričkami</h3>
+							<span class="price_short">185 kc</span>
+						</div>
+					</div>
+				</div>
+				<a class="button" href="#">Do e-shopu</a>
+			</div>
+		</div>
+
+
+		<div class="banner banner_2" style="background-image: url('/img/paralax.jpg')">
+			<div class="banner_info_bottom">
+				<h2>Rozvoz obedu</h2>
+				<p>po Brne primo z nasi kucyne a zdarma</p>
+				<a href="#" class="button">Aktualni nabidka</a>
+			</div>
+		</div>
+
+		<div class="contacts">
+			<h2>Naše bistro a pobočky</h2>
+			<div class="row">
+				<div class="col-sm-4">
+					<div class="contacts_item">
+						<h3>Husova 13, Brno</h3>
+						<p>
+							Otevírací doba:
+							<br>Po 8:30-19:00
+							<br>Út-Pá 7:30 - 19:00
+							<br>So-Ne 9:00-19:00
+						</p>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="contacts_item">
+						<h3>Husova 13, Brno</h3>
+						<p>
+							Otevírací doba:
+							<br>Po 8:30-19:00
+							<br>Út-Pá 7:30 - 19:00
+							<br>So-Ne 9:00-19:00
+						</p>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="contacts_item">
+						<h3>Husova 13, Brno</h3>
+						<p>
+							Otevírací doba:
+							<br>Po 8:30-19:00
+							<br>Út-Pá 7:30 - 19:00
+							<br>So-Ne 9:00-19:00
+						</p>
+					</div>
 				</div>
 			</div>
 		</div>
+
+		<div class="maps">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1692.1235591752668!2d16.60272250234251!3d49.193744689550655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2scz!4v1535355378980" width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+		</div>
+
 	</div>
 
 
