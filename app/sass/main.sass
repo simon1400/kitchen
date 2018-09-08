@@ -227,7 +227,7 @@ header
 		display: inline-block
 		font-weight: bold
 		color: white
-		background: rgba(33, 20, 81, 0.8)
+		background: rgba($accent, 0.8)
 		padding: 20px 35px 10px
 		margin-bottom: 0
 		letter-spacing: 1px
@@ -236,7 +236,7 @@ header
 		display: inline-block
 		color: white
 		text-align: center
-		background: rgba(33, 20, 81, 0.8)
+		background: rgba($accent, 0.8)
 		font-weight: lighter
 		padding: 5px 35px
 		font-size: 31px
@@ -271,6 +271,10 @@ p
 	.top_info_descr
 		padding-left: 80px
 
+
+.maps
+	height: 400px
+
 .top_info_item
 	margin-bottom: 70px
 	&:not(:first-child)
@@ -282,19 +286,6 @@ p
 			padding-right: 80px
 		.thumb
 			transform: rotate(3deg)
-			animation-name: rotating-plus
-
-@keyframes rotating
-	from
-		transform: rotate(0deg)
-	to
-		transform: rotate(-3deg)
-
-@keyframes rotating-plus
-	from
-		transform: rotate(0deg)
-	to
-		transform: rotate(3deg)
 
 
 .thumb
@@ -302,9 +293,8 @@ p
 	border: 10px solid white
 	box-shadow: 0px 4px 45px 0px rgba(0, 0, 0, 0.2)
 	transition: all 1s ease
-	transform: rotate(3deg)
+	transform: rotate(-3deg)
 	height: auto
-	animation-name: rotating
 
 .more
 	color: $accent
