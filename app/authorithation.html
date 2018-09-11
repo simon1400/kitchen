@@ -20,6 +20,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Merriweather:300i" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,500,600&amp;subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
 	<link href="libs/hamburger.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 	<!-- Custom Browsers Color Start -->
 	<meta name="theme-color" content="#000">
 	<!-- Custom Browsers Color End -->
@@ -39,9 +40,9 @@
 						<form action="">
 							<input type="text" id="input_search" placeholder="Hledat...">
 							<button type="submit">Hledat</button>
-							<img class="svg" src="/img/times-light.svg" alt="">
+							<span><img class="svg" src="/img/times-light.svg" alt=""></span>
 						</form>
-						<img class="svg" src="/img/search-light.svg" alt="">
+						<span><img class="svg" src="/img/search-light.svg" alt=""></span>
 					</div>
 					<div class="user">
 						<img class="svg" src="/img/user-light.svg" alt="">
@@ -84,15 +85,18 @@
 						<form action="">
 							<input type="text" id="input_search" placeholder="Hledat...">
 							<button type="submit">Hledat</button>
-							<img class="svg" src="/img/times-light.svg" alt="">
+							<span><img class="svg" src="/img/times-light.svg" alt=""></span>
 						</form>
-						<img class="svg" src="/img/search-light.svg" alt="">
+						<span><img class="svg" src="/img/search-light.svg" alt=""></span>
 					</div>
 					<div class="user">
 						<img class="svg" src="/img/user-light.svg" alt="">
 					</div>
 					<div class="basket">
-						<img class="svg" src="/img/shopping-basket-light.svg" alt="">
+						<a href="">
+							<img class="svg" src="/img/shopping-basket-light.svg" alt="">
+							<span>6</span>
+						</a>
 					</div>
 				</div>
 			</div>
@@ -101,7 +105,7 @@
 
 
 	<div class="container cont_resp">
-		<div class="content basket">
+		<div class="content authorization">
 			<div class="breadcrumbs">
 				<nav>
 					<a href="#">Home</a><img src="/img/angle-right-light.svg" alt="">
@@ -109,124 +113,82 @@
 					Holister easy plaid shirt
 				</nav>
 			</div>
-
 			<div class="basket_head">
-				<h1>Obsah kosiku</h1>
+				<h1>Registrace</h1>
 			</div>
-			<div class="basket_content">
-				<table>
-					<tr class="item_deily_menu">
-						<td class="basket_deily_head_top">
-							<h2>Ctvrtek</h2>
-						</td>
-						<td class="basket_deily_content" colspan="2">
-							<span>Menu + Polevka</span>
-							<p>Kremove rizoto se zampiony, susenymi rajcaty a vegeparmezanem, A: 8</p>
-							<p>Hraskovy krem s tyminem</p>
-						</td>
-						<td class="order_input_basket">
-							<input type="number" value="1">
-						</td>
-						<td class="price_basket">
-							<span>199 kc</span>
-						</td>
-						<td class="delete_item">
-							<img class="svg" src="/img/times-light.svg" alt="">
-						</td>
-					</tr>
-					<tr class="basket_product_item">
-						<td class="basket_deily_head_top">
-							<img class="thumb" src="/img/news1.jpg" alt="">
-						</td>
-						<td class="basket_deily_content">
-							<p>Kremove rizoto se zampiony, susenymi</p>
-						</td>
-						<td class="basket_change_select">
-								<select>
-									<option value="">Zmenit den</option>
-									<option value="">Utery</option>
-									<option value="">Patek</option>
-								</select>
-						</td>
-						<td class="order_input_basket">
-							<input type="number" value="1">
-						</td>
-						<td class="price_basket">
-							<span>199 kc</span>
-						</td>
-						<td class="delete_item">
-							<img class="svg" src="/img/times-light.svg" alt="">
-						</td>
-					</tr>
-					<tr class="basket_product_item">
-						<td class="basket_deily_head_top">
-							<img class="thumb" src="/img/news1.jpg" alt="">
-						</td>
-						<td class="basket_deily_content">
-							<p>Kremove rizoto se zampiony, susenymi</p>
-						</td>
-						<td class="basket_change_select">
-								<select>
-									<option value="">Zmenit den</option>
-									<option value="">Utery</option>
-									<option value="">Patek</option>
-								</select>
-						</td>
-						<td class="order_input_basket">
-							<input type="number" value="1">
-						</td>
-						<td class="price_basket">
-							<span>199 kc</span>
-						</td>
-						<td class="delete_item">
-							<img class="svg" src="/img/times-light.svg" alt="">
-						</td>
-					</tr>
-				</table>
+			<div class="form_container">
+				<form action="">
+					<div class="input_item">
+						<label for="">E-mail (uzivatelske jmeno)</label>
+						<input type="text">
+					</div>
+					<div class="input_item">
+						<label for="">Heslo</label>
+						<input type="text">
+					</div>
+					<div class="input_item">
+						<label for="">Podtvrzení hesla</label>
+						<input type="text">
+					</div>
+					<div class="form_head">
+						<h3 class="head">Fakturacni udaje</h3>
+					</div>
+					<div class="input_item">
+						<label for="">Jméno</label>
+						<input type="text">
+					</div>
+					<div class="input_item">
+						<label for="">Příjmení</label>
+						<input type="text">
+					</div>
 
-				<table>
-					<tr class="basket_product_item table_row">
-						<td class="basket_deily_head_top">
-							<img class="thumb" src="/img/news1.jpg" alt="">
-						</td>
-						<td class="basket_deily_content">
-							<p>Kremove rizoto se zampiony, susenymi</p>
-						</td>
-						<td class="basket_change_select">
-								<select>
-									<option value="">+ Pridat k menu</option>
-									<option value="">Utery</option>
-									<option value="">Patek</option>
-								</select>
-						</td>
-						<td class="order_input_basket">
-							<input type="number" value="1">
-						</td>
-						<td class="price_basket">
-							<span>199 kc</span>
-						</td>
-						<td class="delete_item">
-							<img class="svg" src="/img/times-light.svg" alt="">
-						</td>
-					</tr>
-				</table>
-			</div>
-			<div class="basket_footer row">
-				<div>
-					<a href="#" class="button bare">Zpet k nakupu</a>
-				</div>
-				<div>
-					<div class="success basket_delivery_info">Doprava po brne zdarma</div>
-				</div>
-				<div class="price_all">
-					<span>Celkova cena</span>
-					<span class="price">99 kc</span>
-				</div>
-				<div>
-					<a href="#" class="button next_step">Pokracovat</a>
-				</div>
+					<div class="input_item">
+						<label for="">Příjmení</label>
+						<textarea name="" id="" cols="30" rows="10"></textarea>
+					</div>
+
+
+					<div class="input_item">
+						<label for="">sdfgsdf</label>
+						<select name="" id="">
+							<option value="">dsfgsfg</option>
+							<option value="">sgsdf</option>
+							<option value="">sgfsdf</option>
+						</select>
+					</div>
+
+
+					<div class="input_item">
+						<label for="">Ulice</label>
+						<input type="text">
+					</div>
+					<div class="input_item">
+						<label for="">Město</label>
+						<input type="text">
+					</div>
+					<div class="input_item">
+						<label for="">Psč</label>
+						<input type="text">
+					</div>
+					<div class="input_item">
+						<label for="">Telefonní číslo</label>
+						<input type="text">
+					</div>
+					<div class="checkbox_item">
+						<input type="checkbox" id="check">
+						<label for="check"></label>
+						<label for="check">Chci dostavat newsletter a souhlasím se zpracováním osobních údajů</label>
+					</div>
+					<div class="checkbox_item">
+						<input type="checkbox" id="check_1">
+						<label for="check_1"></label>
+						<label for="check_1">Kliknutím na tlačítko "chci se registrovat" souhlasím se zpracováním osobních údajů</label>
+					</div>
+					<div class="auth_footer"><a href="#" class="button">Chci se registrovat</a></div>
+				</form>
 			</div>
 		</div>
+
 	</div>
 
 

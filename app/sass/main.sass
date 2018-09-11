@@ -31,6 +31,7 @@ input[type=number]::-webkit-inner-spin-button
 	background: #fff url('assets/image/arrows.png') no-repeat 50% 50%
 
 
+
 body
 	-webkit-font-smoothing: antialiased
 	font-size: 16px
@@ -492,11 +493,6 @@ h1
 	h1
 		text-align: center
 		margin-bottom: 50px
-	.thumb
-		max-width: 320px
-		float: left
-		margin-right: 30px
-		margin-bottom: 20px
 
 .breadcrumbs
 	text-align: center
@@ -802,6 +798,9 @@ input[type="number"]
 	text-align: center
 	font-size: 20px
 	margin-bottom: 40px
+	h2
+		margin-bottom: 0
+		margin-top: 40px
 
 table
 	width: 100%
@@ -933,12 +932,18 @@ tr
 .basket_footer
 	padding-top: 45px
 	vertical-align: middle
+	display: flex
+	justify-content: space-between
 	.button
-		margin-top: 0
+		margin-top: -2px
 		margin-bottom: 0
 	.price_all
 		text-align: right
 		margin-top: -2px
+		span
+			text-transform: uppercase
+			letter-spacing: 1px
+			font-weight: bold
 		span:first-child
 			margin-right: 10px
 		span:last-child
@@ -951,7 +956,172 @@ tr
 		float: right
 
 
+.form_container
+	width: 365px
+	margin-left: auto
+	margin-right: auto
 
+.input_item
+	&:not(:first-child)
+		margin-top: 20px
+	label
+		text-transform: uppercase
+		display: block
+		letter-spacing: 1px
+		font-weight: bold
+		font-size: 12px
+	input, textarea, select
+		width: 100%
+		border-radius: 3px
+		height: 50px
+		border: 1px solid #DBDBDB
+		padding: 20px
+		color: $text
+	textarea
+		height: 125px
+	select
+		background-color: white
+		&:focus, &:active
+			outline: none
+
+
+span.optional
+	opacity: .5
+
+
+.form_head
+	margin-top: 45px
+	margin-bottom: 45px
+	.head
+		text-align: center
+		display: block
+		text-transform: uppercase
+		letter-spacing: 1px
+
+.checkbox_item
+	margin-top: 30px
+	display: flex
+	justify-content: start-flex
+	&:first-child
+		margin-bottom: 30px
+	input
+		visibility: hidden
+		width: 0
+		height: 0
+	label:first-of-type
+		display: block
+		border: 2px solid $accent
+		width: 20px
+		height: 20px
+		border-radius: 3px
+		background-color: transparent
+		float: left
+		margin-right: 10px
+		position: relative
+		cursor: pointer
+	label:last-child
+		display: block
+		float: left
+		flex: 1
+		margin-top: -3px
+		font-family: 'Merriweather'
+	input:checked + label
+		&:after
+			content: ''
+			border-bottom: 2px solid $accent
+			border-left: 2px solid $accent
+			position: absolute
+			width: 12px
+			height: 7px
+			transform: rotate(-45deg)
+			top: 3px
+			left: 2px
+
+.auth_footer
+	text-align: center
+
+
+.order_footer
+	border-top: 1px solid rgba(77,77,77,.2)
+	margin-top: 40px
+
+.checkout
+	.woocommerce-checkout-review-order-table
+		display: none
+
+
+	.method_platby
+		flex: 1
+		text-align: center
+		padding-top: 8px
+		> ul
+			display: inline-block
+			padding-left: 0
+			li
+				list-style-type: none
+				#payment_method_cod
+					visibility: hidden
+					width: 0
+					height: 0
+				label
+					text-transform: uppercase
+					letter-spacing: 1px
+					font-weight: bold
+					color: $accent
+
+.thanks_content
+	table
+		tr
+			&:last-child
+				td
+					padding-bottom: 40px
+			td
+				text-align: left
+				padding-top: 5px
+				padding-bottom: 5px
+
+.all_info_order
+	h2
+		margin-bottom: 0
+		margin-top: 40px
+	table
+		thead
+			background-color: rgba(gray, .1)
+			th
+				padding-top: 10px
+				padding-bottom: 10px
+		tbody
+			tr:first-child
+				td
+					padding-top: 20px
+			tr:last-child
+				td
+					padding-bottom: 20px
+		td
+			text-align: left
+		th
+			text-transform: uppercase
+		td, th
+			padding-left: 10px
+			padding-top: 5px
+			padding-bottom: 5px
+		tfoot
+			background-color: rgba(gray, .1)
+			tr:first-child
+				td, th
+					padding-top: 20px
+			tr:last-child
+				td, th
+					padding-bottom: 20px
+
+
+.delivery_info
+	h2
+		margin-bottom: 0
+		margin-top: 40px
+		text-align: left
+	address
+		margin-top: 20px
 
 
 
