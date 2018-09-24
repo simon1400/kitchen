@@ -62,8 +62,23 @@
   	.thumb
   		display: none
 
+  .related h2, h2
+    font-size: 26px
+    margin-bottom: 30px
+    margin-top: 30px
+
+
+
 // ≥768px
 +media-breakpoint-down(sm)
+
+  .product_title
+    padding-top: 45px
+
+  .cart-short
+    img
+      border-width: 5px
+
   .container
     max-width: 100%
 
@@ -93,6 +108,9 @@
             padding-left: 15px
           a
             padding: 15px
+
+  .header
+    flex-wrap: nowrap
 
   .header_but_control
     flex: 1
@@ -160,6 +178,14 @@
 // ≥576px
 +media-breakpoint-down(xs)
 
+  .cart-short
+    margin-bottom: 40px
+
+  .header
+    min-height: auto
+    padding-top: 0
+    padding-bottom: 0
+
   .banner_2
     min-height: 390px
 
@@ -173,16 +199,12 @@
       top: 0
       padding: 50px 20px
 
-  .cart-short
-    margin-bottom: 40px
-    img
-      border-width: 5px
-
   .logo
     width: 100%
 
   .header .header_but_control
     text-align: left
+    padding-top: 15px
 
   h2
     font-size: 30px
@@ -235,6 +257,15 @@
       text-align: center
     input
       width: 100%
+
+  .header .logo
+    width: auto
+    img
+      width: 85%
+
+  header .container
+    padding-left: 0
+    padding-right: 0
 
 
 

@@ -89,6 +89,7 @@ header
 		display: inline-block
 		text-align: right
 		padding-top: 25px
+		min-width: 115px
 		img, svg
 			height: 20px
 			vertical-align: middle
@@ -161,6 +162,14 @@ header
 	margin-top: 12px
 	&:focus, &:active
 		outline: none
+
+
+.hamburger-inner, .hamburger-inner:after, .hamburger-inner:before
+	width: 30px
+	height: 2px
+
+.hamburger-box
+	width: 30px
 
 
 
@@ -395,6 +404,7 @@ h3
 	margin-top: 70px
 	margin-bottom: 40px
 	letter-spacing: 1px
+	background-color: transparent
 	&:hover
 		text-decoration: none
 		color: white
@@ -835,6 +845,7 @@ tr
 
 
 .basket
+	position: relative
 	h2
 		margin-bottom: 0
 		font-size: 30px
@@ -875,6 +886,29 @@ tr
 		text-transform: uppercase
 		letter-spacing: 1px
 		font-weight: bold
+
+
+.modal_basket
+	position: absolute
+	right: 0
+	top: 55px
+	background-color: #fff
+	width: 500px
+	border-top: 2px solid $accent
+	padding: 35px
+	padding-bottom: 20px
+	box-shadow: 0px 4px 45px 0px rgba(0, 0, 0, 0.2)
+	img.thumb
+		height: auto!important
+		border-width: 5px
+	p
+		text-align: left
+	.link_to_basket_modal
+		text-align: center
+		border-top: 1px solid #ccc
+		margin-top: 35px
+		padding-top: 20px
+
 
 .basket_change_select
 	select
