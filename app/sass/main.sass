@@ -159,17 +159,17 @@ header
 	max-width: 900px
 
 .hamburger
-	margin-top: 12px
+	margin-top: 12px!important
 	&:focus, &:active
 		outline: none
 
 
 .hamburger-inner, .hamburger-inner:after, .hamburger-inner:before
-	width: 30px
-	height: 2px
+	width: 30px!important
+	height: 2px!important
 
 .hamburger-box
-	width: 30px
+	width: 30px!important
 
 
 
@@ -276,6 +276,10 @@ p
 		font-weight: lighter
 		margin-bottom: 20px
 		line-height: 50px
+		a
+			color: inherit
+			&:hover
+				text-decoration: none
 	p
 		margin-bottom: 30px
 	.top_info_descr
@@ -350,7 +354,7 @@ h3
 		img
 			transform: scale(1.05)
 	img
-		border: 10px solid white
+		border: 5px solid white
 		box-shadow: 0px 4px 45px 0px rgba(0, 0, 0, 0.2)
 		width: 100%
 		height: auto
@@ -365,6 +369,7 @@ h3
 		margin-bottom: inherit
 		letter-spacing: 1px
 		transition: all .5s ease
+		margin-top: 0
 	.price_short, .price
 		font-size: 17px
 		color: $accent
@@ -503,6 +508,13 @@ h1
 	h1
 		text-align: center
 		margin-bottom: 50px
+		letter-spacing: 1px
+	h2, h3, h4, h5
+		margin-bottom: 20px
+		text-align: left
+		font-size: 28px
+	img
+		max-width: 100%
 
 .breadcrumbs
 	text-align: center
@@ -510,7 +522,7 @@ h1
 	text-transform: uppercase
 	letter-spacing: 1px
 	font-size: 12px
-	margin-bottom: 50px
+	margin-bottom: 35px
 	nav
 		a
 			color: rgba($text, .7)
@@ -565,6 +577,7 @@ h1
 		background-color: transparent
 		border: none
 		width: 175px
+		color: $text
 
 .category_menu
 	margin-top: 15px
@@ -701,6 +714,10 @@ input[type="number"]
 			margin-bottom: 100px
 		h3
 			padding-top: 50px
+			a
+				color: $accent
+				&:hover
+					text-decoration: none
 
 .search_item
 	border-bottom: 1px solid rgba(#4D4D4D, .2)
@@ -1156,6 +1173,23 @@ span.optional
 		text-align: left
 	address
 		margin-top: 20px
+
+
+ul.page-numbers
+	margin-top: 60px
+	padding-left: 0
+	text-align: center
+	li
+		list-style-type: none
+		display: inline-block
+		a, span
+			color: $accent
+			padding: 0 10px
+			display: block
+		svg
+			margin-right: 0
+			height: 25px
+			vertical-align: top
 
 
 

@@ -72,6 +72,12 @@
 // ≥768px
 +media-breakpoint-down(sm)
 
+  .woocommerce-ordering
+    display: none
+
+  .product h1, .rubrika h1
+    padding-top: 50px
+
   .product_title
     padding-top: 45px
 
@@ -108,6 +114,9 @@
             padding-left: 15px
           a
             padding: 15px
+          ul
+            border-top: none
+
 
   .header
     flex-wrap: nowrap
@@ -170,13 +179,30 @@
 
 
   .category_image
-  	.category_info
+    min-height: auto
+    height: auto
+    max-width: 100%
+    position: static
+    transform: none
+    overflow: auto
+    background: none
+    .category_info
       width: 100%
+      position: static
+      transform: none
 
+  .content.category
+    margin-top: 0
 
 
 // ≥576px
 +media-breakpoint-down(xs)
+
+  .search form button
+    top: 22px
+
+  .search form input
+    margin-top: 10px
 
   .cart-short
     margin-bottom: 40px
@@ -204,7 +230,7 @@
 
   .header .header_but_control
     text-align: left
-    padding-top: 15px
+    flex: auto
 
   h2
     font-size: 30px
