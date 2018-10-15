@@ -21,8 +21,6 @@
     .top_info_descr
       padding-left: 15px
 
-  .name_menu
-    display: none
   .name_cat h1
     text-align: left
 
@@ -62,8 +60,32 @@
   	.thumb
   		display: none
 
+  .related h2, h2
+    font-size: 26px
+    margin-bottom: 30px
+    margin-top: 30px
+
+
+
 // ≥768px
 +media-breakpoint-down(sm)
+
+  .sort form
+    display: none
+
+  .woocommerce-ordering
+    display: none
+
+  .product h1, .rubrika h1
+    padding-top: 50px
+
+  .product_title
+    padding-top: 45px
+
+  .cart-short
+    img
+      border-width: 5px
+
   .container
     max-width: 100%
 
@@ -93,6 +115,12 @@
             padding-left: 15px
           a
             padding: 15px
+          ul
+            border-top: none
+
+
+  .header
+    flex-wrap: nowrap
 
   .header_but_control
     flex: 1
@@ -139,7 +167,6 @@
       text-align: center
 
   .category_menu
-    display: none
     margin-top: 15px
 
   #hamburder_category
@@ -152,13 +179,43 @@
 
 
   .category_image
-  	.category_info
+    min-height: auto
+    height: auto
+    max-width: 100%
+    position: static
+    transform: none
+    overflow: auto
+    background-image: none!important
+    .category_info
       width: 100%
+      position: static
+      transform: none
 
+  .content.category
+    margin-top: 0
+    .row .col-md-9 .row .col-6
+      &:nth-child(odd)
+        padding-right: 7px
+      &:nth-child(even)
+        padding-left: 7px
 
 
 // ≥576px
 +media-breakpoint-down(xs)
+
+  .search form button
+    top: 22px
+
+  .search form input
+    margin-top: 10px
+
+  .cart-short
+    margin-bottom: 40px
+
+  .header
+    min-height: auto
+    padding-top: 0
+    padding-bottom: 0
 
   .banner_2
     min-height: 390px
@@ -173,16 +230,12 @@
       top: 0
       padding: 50px 20px
 
-  .cart-short
-    margin-bottom: 40px
-    img
-      border-width: 5px
-
   .logo
     width: 100%
 
   .header .header_but_control
     text-align: left
+    flex: auto
 
   h2
     font-size: 30px
@@ -235,6 +288,15 @@
       text-align: center
     input
       width: 100%
+
+  .header .logo
+    width: auto
+    img
+      width: 85%
+
+  header .container
+    padding-left: 0
+    padding-right: 0
 
 
 

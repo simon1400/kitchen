@@ -89,6 +89,7 @@ header
 		display: inline-block
 		text-align: right
 		padding-top: 25px
+		min-width: 115px
 		img, svg
 			height: 20px
 			vertical-align: middle
@@ -158,9 +159,17 @@ header
 	max-width: 900px
 
 .hamburger
-	margin-top: 12px
+	margin-top: 12px!important
 	&:focus, &:active
 		outline: none
+
+
+.hamburger-inner, .hamburger-inner:after, .hamburger-inner:before
+	width: 30px!important
+	height: 2px!important
+
+.hamburger-box
+	width: 30px!important
 
 
 
@@ -267,6 +276,10 @@ p
 		font-weight: lighter
 		margin-bottom: 20px
 		line-height: 50px
+		a
+			color: inherit
+			&:hover
+				text-decoration: none
 	p
 		margin-bottom: 30px
 	.top_info_descr
@@ -290,12 +303,9 @@ p
 
 
 .thumb
-	width: 100%
 	border: 10px solid white
-	box-shadow: 0px 4px 45px 0px rgba(0, 0, 0, 0.2)
 	transition: all 1s ease
 	transform: rotate(-3deg)
-	height: auto
 
 .more
 	color: $accent
@@ -331,21 +341,33 @@ h3
 	color: $text
 	letter-spacing: 1px
 
+.thumb_square
+	box-shadow: 0px 4px 45px 0px rgba(0, 0, 0, 0.2)
+	width: 100%
+	padding-top: calc(100% - 10px)
+	overflow: hidden
+	position: relative
+	img
+		width: 100%
+		height: 100%
+		object-fit: cover
+		position: absolute
+		left: 0
+		top: 0
+
 .cart-short
 	text-align: center
 	cursor: pointer
+	margin-bottom: 10px
 	&:hover, a:hover
 		text-decoration: none
 		h3, h2
 			color: $accent
-		img
+		.thumb_square
 			transform: scale(1.05)
-	img
-		border: 10px solid white
-		box-shadow: 0px 4px 45px 0px rgba(0, 0, 0, 0.2)
-		width: 100%
-		height: auto
-		margin-bottom: 25px
+	.thumb_square
+		border: 5px solid white
+		margin-bottom: 15px
 		transform: scale(1)
 		transition: all .5s ease
 	h3, h2
@@ -356,12 +378,13 @@ h3
 		margin-bottom: inherit
 		letter-spacing: 1px
 		transition: all .5s ease
+		margin-top: 0
 	.price_short, .price
 		font-size: 17px
 		color: $accent
 		letter-spacing: 1px
 		display: block
-		margin-top: 10px
+		margin-top: 0
 
 .new_eshop
 	text-align: center
@@ -395,6 +418,7 @@ h3
 	margin-top: 70px
 	margin-bottom: 40px
 	letter-spacing: 1px
+	background-color: transparent
 	&:hover
 		text-decoration: none
 		color: white
@@ -493,6 +517,17 @@ h1
 	h1
 		text-align: center
 		margin-bottom: 50px
+		letter-spacing: 1px
+	h2, h3, h4, h5
+		margin-bottom: 20px
+		text-align: left
+		font-size: 28px
+	img
+		max-width: 100%
+	ul
+		padding-left: 20px
+		li
+			font-family: 'Merriweather'
 
 .breadcrumbs
 	text-align: center
@@ -500,7 +535,7 @@ h1
 	text-transform: uppercase
 	letter-spacing: 1px
 	font-size: 12px
-	margin-bottom: 50px
+	margin-bottom: 35px
 	nav
 		a
 			color: rgba($text, .7)
@@ -510,9 +545,11 @@ h1
 				margin-left: 10px
 			&:last-child
 				margin-right: 20px
-		img
+		svg
 			height: 20px
-			margin-top: -3px
+			vertical-align: bottom
+			path
+				fill: $text
 			&:last-child
 				margin-right: 10px
 
@@ -555,6 +592,7 @@ h1
 		background-color: transparent
 		border: none
 		width: 175px
+		color: $text
 
 .category_menu
 	margin-top: 15px
@@ -623,15 +661,18 @@ input[type="number"]
 .description_product
 	padding-left: 40px
 
+
 .order_block
 	margin-bottom: 60px
 	margin-top: 40px
-	.price span
-		font-size: 40px
-		font-family: 'Montserrat'
-		font-weight: lighter
-		letter-spacing: 2px
-		color: $accent
+	.price
+		margin-bottom: 40px
+		span
+			font-size: 40px
+			font-family: 'Montserrat'
+			font-weight: lighter
+			letter-spacing: 2px
+			color: $accent
 
 	.button
 		margin-top: 0
@@ -691,6 +732,10 @@ input[type="number"]
 			margin-bottom: 100px
 		h3
 			padding-top: 50px
+			a
+				color: $accent
+				&:hover
+					text-decoration: none
 
 .search_item
 	border-bottom: 1px solid rgba(#4D4D4D, .2)
@@ -835,6 +880,7 @@ tr
 
 
 .basket
+	position: relative
 	h2
 		margin-bottom: 0
 		font-size: 30px
@@ -875,6 +921,28 @@ tr
 		text-transform: uppercase
 		letter-spacing: 1px
 		font-weight: bold
+
+
+.modal_basket
+	position: absolute
+	right: 0
+	top: 55px
+	background-color: #fff
+	width: 500px
+	border-top: 2px solid $accent
+	padding: 35px
+	padding-bottom: 20px
+	box-shadow: 0px 4px 45px 0px rgba(0, 0, 0, 0.2)
+	.thumb
+		border-width: 5px
+	p
+		text-align: left
+	.link_to_basket_modal
+		text-align: center
+		border-top: 1px solid #ccc
+		margin-top: 35px
+		padding-top: 20px
+
 
 .basket_change_select
 	select
@@ -1145,28 +1213,40 @@ span.optional
 		margin-top: 20px
 
 
-@media only screen and (max-width : 1500px)
-	.basket tr > td:first-child
-		width: 15%
+.galery_product
+	.col-6:nth-child(even)
+		.thumb
+			transform: rotate(3deg)!important
 
-	.basket .item_deily_menu > td:nth-child(2)
-		width: 63%
 
-	.basket_footer .price_all span:last-child
-		font-size: 19px
+ul.page-numbers
+	margin-top: 60px
+	padding-left: 0
+	text-align: center
+	li
+		list-style-type: none
+		display: inline-block
+		a, span
+			color: $accent
+			padding: 0 10px
+			display: block
+		span
+			position: relative
+			&:after
+				content: ''
+				display: block
+				width: 50%
+				position: absolute
+				height: 2px
+				background-color: $accent
+				bottom: 0
+				left: 50%
+				transform: translateX(-50%)
+		svg
+			margin-right: 0
+			height: 25px
+			vertical-align: top
 
-	.basket_footer .price_all, .basket_footer .basket_delivery_info, .basket_footer .button.bare,
-	.method_platby
-		font-size: 13px
-
-	.basket_footer .price_all
-		margin-top: 9px
-
-	.basket_footer .basket_delivery_info
-		margin-top: 16px
-
-	.basket_footer .button.bare
-		margin-top: 6px
 
 
 
