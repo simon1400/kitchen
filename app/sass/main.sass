@@ -67,7 +67,7 @@ b, strong
 
 header
 	background-color: #fff
-	box-shadow: 0px 4px 45px 0px rgba(0, 0, 0, .2)
+	box-shadow: 0px 4px 45px 0 rgba(0, 0, 0, .2)
 	position: relative
 	z-index: 1000
 	transition: all .5s ease
@@ -241,7 +241,7 @@ header
 		padding: 20px 35px 10px
 		margin-bottom: 0
 		letter-spacing: 1px
-		font-size: 36px
+		font-size: 44px
 	span
 		display: inline-block
 		color: white
@@ -249,7 +249,7 @@ header
 		background: rgba($accent, 0.8)
 		font-weight: lighter
 		padding: 5px 35px
-		font-size: 31px
+		font-size: 40px
 
 .content_home
 	margin-top: -415px
@@ -270,12 +270,13 @@ p
 
 .top_info
 	transform: translateY(-55px)
-	h3
+	h2
 		padding-top: 150px
 		font-size: 37px
 		font-weight: lighter
 		margin-bottom: 20px
-		line-height: 50px
+		line-height: 43px
+		text-align: left
 		a
 			color: inherit
 			&:hover
@@ -292,8 +293,8 @@ p
 .top_info_item
 	margin-bottom: 70px
 	&:not(:first-child)
-		.top_info_descr h3
-			padding-top: 50px
+		.top_info_descr h2
+			padding-top: 100px
 	&:nth-child(even)
 		.top_info_descr
 			padding-left: 15px
@@ -359,6 +360,7 @@ h3
 	text-align: center
 	cursor: pointer
 	margin-bottom: 10px
+	display: block
 	&:hover, a:hover
 		text-decoration: none
 		h3, h2
@@ -366,7 +368,7 @@ h3
 		.thumb_square
 			transform: scale(1.05)
 	.thumb_square
-		border: 5px solid white
+		border: 10px solid white
 		margin-bottom: 15px
 		transform: scale(1)
 		transition: all .5s ease
@@ -511,17 +513,27 @@ h1
 	font-family: 'Montserrat'
 	font-weight: lighter
 
+.footer_content_wrap
+	box-shadow: 0 4px 45px 0 rgba(0,0,0,.2)
+
+.top_info_descr
+	ul
+		padding-left: 20px
+		li
+			font-family: 'Merriweather'
+
 .full_article
-	padding-top: 60px
 	padding-bottom: 60px
 	h1
 		text-align: center
 		margin-bottom: 50px
 		letter-spacing: 1px
+		font-size: 40px
 	h2, h3, h4, h5
 		margin-bottom: 20px
 		text-align: left
-		font-size: 28px
+		font-size: 30px
+		font-weight: lighter
 	img
 		max-width: 100%
 	ul
@@ -545,7 +557,7 @@ h1
 				margin-left: 10px
 			&:last-child
 				margin-right: 20px
-		svg
+		svg, img
 			height: 20px
 			vertical-align: bottom
 			path
@@ -733,10 +745,14 @@ input[type="number"]
 		transform: none
 		.top_info_item
 			margin-bottom: 100px
-		h3
+		h2
 			padding-top: 50px
+			margin-bottom: 10px
+			text-align: left
+			font-size: 40px
+			line-height: 48px
 			a
-				color: $accent
+				color: $text
 				&:hover
 					text-decoration: none
 
@@ -802,6 +818,7 @@ input[type="number"]
 	padding-bottom: 15px
 	padding-top: 15px
 	letter-spacing: 1px
+	width: 100%
 	&:first-child
 		margin-top: 40px
 	h3
@@ -871,15 +888,17 @@ tr
 				fill: red
 
 
-.basket_icon a
-	color: inherit
-	span
-		vertical-align: middle
-		margin-left: 3px
-	&:hover
-		text-decoration: none
+.basket_icon
+	position: relative
+	a
+		color: inherit
 		span
-			color: $accent
+			vertical-align: middle
+			margin-left: 3px
+		&:hover
+			text-decoration: none
+			span
+				color: $accent
 
 
 .basket
@@ -926,20 +945,27 @@ tr
 		font-weight: bold
 
 
+.wc-backward
+	margin-top: 0
+
 .modal_basket
 	position: absolute
 	right: 0
+	display: none
 	top: 55px
 	background-color: #fff
 	width: 500px
 	border-top: 2px solid $accent
 	padding: 35px
 	padding-bottom: 20px
-	box-shadow: 0px 4px 45px 0px rgba(0, 0, 0, 0.2)
+	box-shadow: 0px 4px 45px 0 rgba(0, 0, 0, .2)
 	.thumb
 		border-width: 5px
+		img
+			height: 100%!important
 	p
 		text-align: left
+		vertical-align: middle
 	.link_to_basket_modal
 		text-align: center
 		border-top: 1px solid #ccc

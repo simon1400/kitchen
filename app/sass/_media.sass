@@ -16,7 +16,7 @@
     top: 58px
 
   .top_info
-    h3
+    h2
       padding-top: 100px
     .top_info_descr
       padding-left: 15px
@@ -50,8 +50,8 @@
     font-size: 30px
 
   .top_info
-    h3
-      padding-top: 50px
+    h2
+      padding-top: 50px!important
 
   .full_article .thumb
     margin-bottom: 50px
@@ -60,7 +60,7 @@
   	.thumb
   		display: none
 
-  .related h2, h2
+  .related h2
     font-size: 26px
     margin-bottom: 30px
     margin-top: 30px
@@ -69,6 +69,9 @@
 
 // ≥768px
 +media-breakpoint-down(sm)
+
+  .cart-short h2, .cart-short h3
+    margin-bottom: 0
 
   .sort form
     display: none
@@ -203,6 +206,9 @@
 // ≥576px
 +media-breakpoint-down(xs)
 
+  .top_info h2
+    font-size: 30px
+
   .search form button
     top: 22px
 
@@ -254,11 +260,11 @@
   .banner_info_top
     top: 95px
     span
-      font-size: 20px
+      font-size: 25px
       padding: 0 15px
     h1
-      font-size: 24px
-      padding: 7px 20px 3px
+      font-size: 30px
+      padding: 7px 20px 5px
 
   h3
     font-size: 27px
